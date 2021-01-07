@@ -1,0 +1,15 @@
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   // display: flex;
+   // flex-direction: column;
+   background-color: $secondary;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}

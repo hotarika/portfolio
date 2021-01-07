@@ -1,0 +1,670 @@
+// 上書き
+$primary: #66463c;
+$secondary: #fff9f4;
+$primary-light: #efd895;
+
+@import './reset';
+@import './node_modules/bootstrap/scss/bootstrap';
+@import './base';
+@import './mixin';
+
+// *********************************
+// 共通
+// *********************************
+.c-h1 {
+   position: relative;
+   display: inline-block;
+   width: 80%;
+   padding: 10px;
+   margin-bottom: 30px;
+   font-size: 17px;
+   font-weight: bold;
+   color: $white;
+   text-align: center;
+   background-color: $primary;
+   border-radius: 25px 5px 5px 25px; /* 左側の角を丸く */
+   &::before {
+      position: absolute;
+      left: 15px;
+      color: $secondary;
+      content: '●';
+   }
+   @include mq('md') {
+      width: 50%;
+      font-size: 19px;
+   }
+}
+.c-section {
+   margin-top: 50px;
+   text-align: center;
+   @include mq('xl') {
+      margin-top: 70px;
+   }
+   @include mq('lg') {
+      margin-top: 100px;
+   }
+}
+
+// *********************************
+// 全体
+// *********************************
+$header-height: 70px;
+$footer-height: 60px;
+
+.main {
+   min-height: calc(100vh - #{$header-height + $footer-height});
+}
+
+// *********************************
+// header
+// *********************************
+
+.header {
+   // background-color: $red;
+   position: relative;
+   // background-image: url('../images/header-background.jpg');
+   background-color: #3a0606;
+
+   &__itemsWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: $header-height;
+      @include mq('md') {
+         justify-content: space-between;
+      }
+   }
+   &__logo {
+      z-index: 2;
+      width: 110px;
+      @include mq('lg') {
+         width: 150px;
+      }
+   }
+   &__lists {
+      display: none;
+      margin-bottom: 0;
+      font-size: 14px;
+      list-style: none;
+      @include mq('md') {
+         display: flex;
+      }
+   }
+   &__list {
+      margin-left: 20px;
+   }
+   &__link {
+      color: $secondary;
+      & > i {
+         margin-right: 3px;
+         font-size: 15px;
+         line-height: 21px;
+         color: $secondary;
+      }
+   }
+}
+
+// *********************************
+// home
+// *********************************
+.home {
+   // -------------------
+   // トップ画像
+   // -------------------
+   &__topImageSec {
+      position: relative;
+   }
+   &__topImage {
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+   }
+   &__titleSec {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 90%;
+      height: 40%;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      @include mq('lg') {
+         bottom: 80px;
+         max-width: 800px;
+      }
+   }
+   &__title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 85%;
+      margin: auto;
+      opacity: 1;
+   }
+   &__wave {
+      position: absolute;
+      bottom: 0;
+      display: none;
+      width: 100%;
+      overflow: hidden;
+      @include mq('lg') {
+         display: block;
+      }
+   }
+
+   // -------------------
+   // ポートフォリオ
+   // -------------------
+   &__portfolioSec {
+      & > .container {
+         @include mq('lg') {
+            max-width: 800px;
+         }
+      }
+   }
+   &__portfolioItem {
+      margin-bottom: 20px;
+      border: 1px solid $gray-300;
+      border-radius: 5px;
+      @include mq('md') {
+         display: flex;
+      }
+      @include mq('lg') {
+         margin-bottom: 30px;
+      }
+   }
+   &__portfolioImage {
+      & > img {
+         width: 100%;
+         height: 150px;
+         border-radius: 3px 3px 0 0;
+         object-fit: cover;
+         @include mq('md') {
+            width: 200px;
+            height: 100%;
+            border-radius: 3px 0 0 3px;
+         }
+      }
+   }
+   &__portfolioDescriptionArea {
+      padding: 0;
+      text-align: left;
+      @include mq('md') {
+         width: 100%;
+      }
+   }
+   &__portfolioHead {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: $primary-light;
+      @include mq('md') {
+         padding-left: 25px;
+         border-top-right-radius: 3px;
+      }
+   }
+   &__portfolioInfoArea {
+      //
+   }
+   &__portfolioInfo {
+      padding: 0;
+      background-color: $white;
+   }
+   &__portfolioInfoItems {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 15px;
+      font-size: 11px;
+      @include mq('2xs') {
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-around;
+      }
+      @include mq('md') {
+         justify-content: flex-start;
+         padding-left: 25px;
+         & > div {
+            margin-right: 20px;
+         }
+      }
+   }
+   &__portfolioInfoItem {
+      white-space: nowrap;
+      @include mq('md') {
+         font-size: 12px;
+      }
+      &.-date {
+         font-size: 12px;
+         @include mq('md') {
+            font-size: 13px;
+         }
+      }
+      & > span {
+         padding: 3px 8px;
+         margin-right: 5px;
+         font-size: 11px;
+         background-color: $gray-300;
+         border-radius: 2px;
+         @include mq('md') {
+            font-size: 12px;
+         }
+      }
+
+      &:first-child {
+         margin-bottom: 8px;
+         @include mq('2xs') {
+            margin-bottom: 0;
+         }
+      }
+   }
+   &__portfolioUse {
+      padding: 10px 15px;
+      font-size: 13px;
+      border-top: 1px solid $gray-300;
+      border-bottom: 1px solid $gray-300;
+      @include mq('md') {
+         padding-left: 25px;
+      }
+   }
+   &__portfolioUseHead {
+      margin-bottom: 5px;
+      font-weight: bold;
+   }
+   &__portfolioUseItem {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      & > img {
+         width: 20px;
+         margin-top: -3px;
+      }
+   }
+   &__portfolioLinks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      font-size: 11px;
+      white-space: nowrap;
+      background-color: $white;
+      border-radius: 0 0 5px 5px;
+      @include mq('md') {
+         font-size: 12px;
+         border-bottom-right-radius: 5px;
+      }
+   }
+   &__portfolioLink {
+      width: 30%;
+      padding: 5px 0;
+      color: $black;
+      text-align: center;
+      background-color: $gray-200;
+      border-radius: 2px;
+      @include mq('md') {
+         width: 27%;
+      }
+      @include mq('md') {
+         width: 28%;
+      }
+      & > i {
+         margin-right: 3px;
+         font-size: 12px;
+         @include mq('md') {
+            font-size: 13px;
+         }
+      }
+      &:nth-child(2) {
+         margin: 0 5px;
+         @include mq('md') {
+            margin: 0 20px;
+         }
+      }
+   }
+
+   // -------------------
+   // 学習内容・スキル
+   // -------------------
+   &__learningSec {
+      & > .container {
+         @include mq('lg') {
+            max-width: 800px;
+         }
+      }
+   }
+   &__learningItem {
+      margin-bottom: 20px;
+      border: 1px solid $gray-300;
+      border-radius: 5px;
+      @include mq('md') {
+         margin-bottom: 30px;
+      }
+      & > h2 {
+         padding: 10px 0;
+         margin: 0;
+         font-size: 16px;
+         font-weight: bold;
+         background-color: $primary-light;
+         border-radius: 3px 3px 0 0;
+         @include mq('md') {
+            font-size: 18px;
+         }
+      }
+   }
+   &__learningDetailWrap {
+      padding: 15px;
+      background-color: $white;
+      border-radius: 0 0 5px 5px;
+   }
+   &__learningSkills {
+      // padding-top: 10px;
+      padding-bottom: 15px;
+   }
+   &__learningSkill {
+      margin-right: 8px;
+      font-size: 13px;
+      white-space: nowrap;
+      &.-linux {
+         margin-right: 5px;
+      }
+      @include mq('md') {
+         margin-right: 15px;
+         font-size: 14px;
+         font-size: 16px;
+         &.-linux {
+            margin-right: 10px;
+         }
+         &.-git {
+            margin-right: 18px;
+         }
+      }
+   }
+   &__learningSkillIcon {
+      width: 25px;
+      margin-right: 4px;
+      @include mq('md') {
+         width: 45px;
+         margin-right: 5px;
+      }
+      // コーディング
+      &.-html {
+         @include mq('md') {
+            margin-top: -2px;
+         }
+      }
+      &.-scss {
+         @include mq('md') {
+            width: 50px;
+         }
+      }
+      // フロントエンド
+      &.-js {
+         width: 25px;
+         margin-top: -2px;
+         @include mq('md') {
+            width: 42px;
+            margin-right: 8px;
+         }
+      }
+      &.-vue {
+         margin-right: 2px;
+         margin-bottom: -1px;
+         @include mq('md') {
+            //
+         }
+      }
+      &.-jquery {
+         @include mq('md') {
+            margin-right: 8px;
+         }
+      }
+      // バックエンド
+      &.-php {
+         @include mq('md') {
+            margin-right: 8px;
+         }
+      }
+      &.-laravel {
+         @include mq('md') {
+            margin-right: 8px;
+            margin-bottom: -4px;
+         }
+      }
+      &.-sql {
+         width: 20px;
+         @include mq('md') {
+            width: 35px;
+            margin-right: 8px;
+         }
+      }
+      // その他
+      &.-xd {
+         @include mq('md') {
+            width: 42px;
+         }
+      }
+      // 現在勉強中
+      &.-linux {
+         width: 35px;
+         margin-right: -2px;
+         @include mq('md') {
+            width: 60px;
+            margin: 0;
+            margin-right: -4px;
+         }
+      }
+      &.-git {
+         width: 30px;
+         @include mq('md') {
+            width: 50px;
+         }
+      }
+      &.-ps {
+         @include mq('md') {
+            width: 41px;
+            margin-right: 8px;
+         }
+      }
+   }
+   &__learningDescriptionWrap {
+      @include mq('md') {
+         display: flex;
+      }
+   }
+   &__learningDetailSec {
+      margin: 0 auto;
+      margin-bottom: 15px;
+      border: 1px solid $gray-300;
+      border-radius: 2px;
+      @include mq('md') {
+         width: 48%;
+      }
+      & > h3 {
+         padding: 6px 0;
+         margin: 0;
+         font-size: 14px;
+         font-weight: bold;
+         background-color: $gray-400;
+         border-radius: 1px 1px 0 0;
+      }
+   }
+   &__learningText {
+      padding: 10px 15px;
+      margin: 0;
+      font-size: 12px;
+      text-align: left;
+      word-break: break-all;
+      white-space: pre-wrap;
+      border-radius: 0 0 1px 1px;
+   }
+
+   // -------------------
+   // 私について
+   // -------------------
+   &__aboutSec {
+      & > .container {
+         @include mq('lg') {
+            max-width: 800px;
+         }
+      }
+   }
+   &__aboutContent {
+      padding: 15px;
+      font-size: 12px;
+      text-align: left;
+      background-color: $white;
+      border: 1px solid $gray-300;
+      border-radius: 5px;
+   }
+}
+
+// *********************************
+// 制作物詳細
+// *********************************
+.detail {
+   // -------------------
+   // 目次
+   // -------------------
+   &__contentsLists {
+      padding-left: calc(50% - 100px);
+      text-align: left;
+   }
+
+   // -------------------
+   // 内容説明
+   // -------------------
+   &__title {
+      position: relative;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 17px;
+      font-weight: bold;
+      color: $white;
+      text-align: left;
+      background-color: $primary;
+      border: dashed 2px $white;
+      box-shadow: 0 0 0 5px $primary;
+      &::after {
+         position: absolute;
+         top: -7px;
+         left: -7px;
+         content: '';
+         border-color: $black $secondary #826056;
+         border-style: solid;
+         border-width: 0 0 25px 25px;
+         box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+      }
+      @include mq('md') {
+         text-align: center;
+      }
+      @include mq('lg') {
+         max-width: 800px;
+         margin: 30px auto 0;
+      }
+   }
+   &__contentsListsSec {
+      & > .container {
+         @include mq('lg') {
+            max-width: 800px;
+         }
+      }
+   }
+   &__contentsWrap {
+      // border: 1px solid $gray-300;
+   }
+   &__contentWrap {
+      margin-bottom: 30px;
+      background-color: $white;
+      border: 1px solid $gray-300;
+      @include mq('md') {
+         display: flex;
+         min-height: 140px;
+      }
+   }
+   &__contentImage {
+      @include mq('md') {
+         width: 30%;
+      }
+      & > img {
+         width: 100%;
+         object-fit: cover;
+         height: 200px;
+         @include mq('md') {
+            height: 100%;
+         }
+      }
+   }
+   &__descriptionWrap {
+      width: 100%;
+      min-height: 150px;
+      padding: 15px;
+      text-align: left;
+   }
+   &__descriptionHead {
+      font-size: 16px;
+      font-weight: bold;
+   }
+   &__descriptionText {
+      margin: 0;
+      font-size: 14px;
+      text-align: left;
+      word-break: break-all;
+      white-space: pre-wrap;
+      @include mq('md') {
+         width: 70%;
+      }
+      @include mq('lg') {
+         width: 100%;
+      }
+   }
+
+   // -------------------
+   // 作成してみて
+   // -------------------
+   &__createSec {
+      & > .container {
+         @include mq('lg') {
+            max-width: 800px;
+         }
+      }
+   }
+   &__createText {
+      padding: 15px;
+      font-size: 14px;
+      text-align: left;
+      background-color: $white;
+      border: 1px solid $gray-300;
+      & > h2 {
+         margin: 20px 0 10px;
+         font-size: 16px;
+         font-weight: bold;
+      }
+   }
+}
+
+// *********************************
+// footer
+// *********************************
+html {
+   // min-height: 100%;
+}
+.footer {
+   margin-top: 70px;
+   background-color: $primary;
+   background-color: #3a0606;
+   &__imageWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: $footer-height;
+      & > img {
+         width: 110px;
+      }
+   }
+}

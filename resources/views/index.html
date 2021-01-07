@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+   <head>
+      <%= require('html-loader!./common/head.html') %>
+      <title>ホーム | ポートフォリオ</title>
+   </head>
+
+   <body class="bg-secondary">
+      <div id="app">
+         <!-- header -->
+         <header-component></header-component>
+
+         <main class="main home">
+            <!-- トップ画像 -->
+            <section class="home__topImageSec">
+               <img class="home__topImage" src="<%= require('../images/top-image.jpg').default %>" alt="トップ画像" />
+               <div class="home__titleSec">
+                  <img class="home__title" src="<%= require('../images/home-image.svg').default %>" alt="" />
+               </div>
+               <div class="home__wave">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="1975.071"
+                     height="81.706"
+                     viewBox="0 0 1975.071 81.706"
+                  >
+                     <path
+                        id="パス_3"
+                        data-name="パス 3"
+                        d="M-15,892s147.224-68.789,403.1-68.523,341.113,50.156,561.708,49.266,365.6-47.461,588.381-49.266S1960.071,892,1960.071,892v13.148H-15Z"
+                        transform="translate(15 -823.442)"
+                        fill="#fff9f4"
+                     />
+                  </svg>
+               </div>
+            </section>
+
+            <!-- ポートフォリオ一覧 -->
+            <portfolio-section></portfolio-section>
+
+            <!-- 学習過程でのポートフォリオ -->
+            <others-products-section></others-products-section>
+
+            <!-- 学習内容 -->
+            <learning-section></learning-section>
+
+            <!-- 私について -->
+            <section id="about" class="c-section home__aboutSec">
+               <div class="container">
+                  <h1 class="c-h1">私について</h1>
+                  <div class="home__aboutContent">
+                     ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                  </div>
+               </div>
+            </section>
+         </main>
+
+         <!-- header -->
+         <footer-component></footer-component>
+      </div>
+   </body>
+</html>

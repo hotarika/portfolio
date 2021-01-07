@@ -1,0 +1,82 @@
+[
+   {
+      "name": "HTML",
+      "iconName": "html.svg",
+      "cssClass": "-html"
+   },
+   {
+      "name": "CSS",
+      "iconName": "css.svg",
+      "cssClass": "-css"
+   },
+   {
+      "name": "SCSS",
+      "iconName": "sass.svg",
+      "cssClass": "-scss"
+   },
+   {
+      "name": "Bootstrap",
+      "iconName": "bootstrap.svg",
+      "cssClass": "-bootstrap"
+   },
+   {
+      "name": "JavaScript",
+      "iconName": "js.svg",
+      "cssClass": "-js"
+   },
+   {
+      "name": "Vue.js",
+      "iconName": "vue.svg",
+      "cssClass": "-vue"
+   },
+   {
+      "name": "jQuery",
+      "iconName": "jquery.svg",
+      "cssClass": "-jquery"
+   },
+   {
+      "name": "PHP",
+      "iconName": "php.svg",
+      "cssClass": "-php"
+   },
+   {
+      "name": "Laravel",
+      "iconName": "laravel.svg",
+      "cssClass": "-laravel"
+   },
+   {
+      "name": "SQL",
+      "iconName": "sql.svg",
+      "cssClass": "-sql"
+   },
+   {
+      "name": "Adobe XD",
+      "iconName": "xd.svg",
+      "cssClass": "-xd"
+   },
+   {
+      "name": "タッチタイピング",
+      "iconName": "keyboard.svg",
+      "cssClass": "-typing"
+   },
+   {
+      "name": "Linux",
+      "iconName": "linux.svg",
+      "cssClass": "-linux"
+   },
+   {
+      "name": "Git",
+      "iconName": "git.svg",
+      "cssClass": "-git"
+   },
+   {
+      "name": "Photoshop",
+      "iconName": "photoshop.svg",
+      "cssClass": "-ps"
+   },
+   {
+      "name": "webpack",
+      "iconName": "webpack.svg",
+      "cssClass": "-webpack"
+   }
+]

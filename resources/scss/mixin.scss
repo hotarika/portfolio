@@ -1,0 +1,27 @@
+// ================================
+// レスポンシブデザイン
+// ================================
+// サイト横幅の値を他の場所でも利用することを想定し、変数とブレークポイントを分けている
+$site-width-3xs: 320px !default; // iPhoneSE, iPhone5sのサイズ
+$site-width-2xs: 375px !default; // スマホ（シェアが一番多いサイズ）
+$site-width-xs: 414px !default; // スマホ（通常より一回り大きいサイズ）
+$site-width-sm: 576px !default; // スマホの横向きを想定
+$site-width-md: 768px !default; // タブレットを想定
+$site-width-lg: 992px !default; // PC（デフォルト）
+$site-width-xl: 1200px !default; // PC
+
+$breakpoints: (
+   '3xs': 'screen and (min-width: #{$site-width-3xs})',
+   '2xs': 'screen and (min-width: #{$site-width-2xs})',
+   'xs': 'screen and (min-width: #{$site-width-xs})',
+   'sm': 'screen and (min-width: #{$site-width-sm})',
+   'md': 'screen and (min-width: #{$site-width-md})',
+   'lg': 'screen and (min-width: #{$site-width-lg})',
+   'xl': 'screen and (min-width: #{$site-width-xl})'
+) !default;
+
+@mixin mq($breakpoint: lg) {
+   @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+   }
+}
