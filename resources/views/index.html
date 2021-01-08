@@ -45,20 +45,16 @@
             <learning-section></learning-section>
 
             <!-- 私について -->
-            <section id="about" class="c-section home__aboutSec">
-               <div class="container">
-                  <h2 class="c-h2">私について</h2>
-                  <div class="c-h2__contentSec">
-                     <div class="c-h3__wrap">
-                        <h3 class="c-h3">苦労した点</h3>
-                        <p>
-                           ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-                        </p>
-                        <p>いいいいいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
-                     </div>
+            <detail-content-section :h2="'作成してみて'" :id="'about'">
+               <template v-slot:content>
+                  <div class="c-h3__wrap">
+                     <h3 class="c-h3">工夫した点</h3>
                   </div>
-               </div>
-            </section>
+                  <div class="c-h3__wrap">
+                     <h3 class="c-h3">苦労した点</h3>
+                  </div>
+               </template>
+            </detail-content-section>
          </main>
 
          <!-- header -->

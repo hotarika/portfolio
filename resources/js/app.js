@@ -18,7 +18,6 @@ Vue.component('learning-component', require('./components/learningComponent.vue'
 Vue.component('detail-portfolio-page', require('./components/detailPortfolioPage.vue').default);
 Vue.component('detail-title-section', require('./components/detailTitleSection.vue').default);
 Vue.component('detail-content-section', require('./components/detailContentSection.vue').default);
-Vue.component('detail-impression-section', require('./components/detailImpressionSection.vue').default);
 
 new Vue({
    el: '#app'
