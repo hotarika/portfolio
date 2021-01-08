@@ -52,7 +52,7 @@ $primary-light: #efd895;
    font-weight: bold;
    color: $white;
    text-align: center;
-   letter-spacing: 1.1px;
+   letter-spacing: 1px;
    background-color: $primary;
    border-radius: 25px 5px 5px 25px; /* 左側の角を丸く */
    &::before {
@@ -62,7 +62,7 @@ $primary-light: #efd895;
       content: '●';
    }
    @include mq('md') {
-      font-size: 19px;
+      font-size: 20px;
    }
 }
 .c-h2__contentSec {
@@ -71,7 +71,7 @@ $primary-light: #efd895;
    margin: 0 auto;
    font-size: 14px;
    text-align: left;
-   letter-spacing: 1px;
+   letter-spacing: 0.5px;
    background-color: $white;
    border: 1px solid $gray-300;
    border-radius: 5px;
@@ -81,13 +81,18 @@ $primary-light: #efd895;
    & > p {
       margin-bottom: 5px;
    }
+   &:last-child {
+      margin: 0;
+   }
 }
 .c-h3 {
+   padding-bottom: 5px;
    margin-bottom: 12px;
-   font-size: 17px;
+   font-size: 18px;
    font-weight: bold;
    text-align: left;
    letter-spacing: 0;
+   border-bottom: 1px solid $gray-200;
    &::before {
       content: '● ';
    }
@@ -116,6 +121,12 @@ $primary-light: #efd895;
       border-bottom-right-radius: 5px;
       opacity: 0.5;
    }
+}
+.c-h4 {
+   margin-top: 15px;
+   margin-bottom: 5px;
+   font-size: 15px;
+   font-weight: bold;
 }
 .c-section {
    margin-top: 50px;
