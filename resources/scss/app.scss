@@ -499,6 +499,7 @@ $footer-height: 60px;
       margin: 0;
       font-size: 12px;
       text-align: left;
+      letter-spacing: 1px;
       word-break: break-all;
       white-space: pre-wrap;
       border-radius: 0 0 1px 1px;
@@ -518,6 +519,7 @@ $footer-height: 60px;
       padding: 15px;
       font-size: 12px;
       text-align: left;
+      letter-spacing: 1px;
       background-color: $white;
       border: 1px solid $gray-300;
       border-radius: 5px;
@@ -612,8 +614,9 @@ $footer-height: 60px;
    }
    &__descriptionText {
       margin: 0;
-      font-size: 14px;
+      font-size: 12px;
       text-align: left;
+      letter-spacing: 1px;
       word-break: break-all;
       white-space: pre-wrap;
       @include mq('md') {
@@ -636,8 +639,9 @@ $footer-height: 60px;
    }
    &__createText {
       padding: 15px;
-      font-size: 14px;
+      font-size: 12px;
       text-align: left;
+      letter-spacing: 1px;
       background-color: $white;
       border: 1px solid $gray-300;
       & > h2 {
