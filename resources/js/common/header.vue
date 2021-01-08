@@ -26,6 +26,7 @@
       </div>
    </header>
 </template>
+
 <script>
 export default {
    computed: {

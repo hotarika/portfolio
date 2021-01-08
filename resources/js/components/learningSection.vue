@@ -1,7 +1,7 @@
 <template>
    <section id="learning" class="c-section home__learningSec">
       <div class="container">
-         <h1 class="c-h1">これまでの学習内容</h1>
+         <h2 class="c-h2">これまでの学習内容</h2>
          <div class="home__learningItems">
             <!-- アイテム -->
             <template v-for="l of learning">

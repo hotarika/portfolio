@@ -1,7 +1,7 @@
 <template>
    <section id="portfolio" class="c-section home__portfolioSec">
       <div class="container">
-         <h1 class="c-h1">その他 制作物</h1>
+         <h2 class="c-h2">その他 制作物</h2>
          <div class="home__portfolioItems">
             <!-- アイテム -->
             <template v-for="p of portfolio">

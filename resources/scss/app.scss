@@ -13,14 +13,46 @@ $primary-light: #efd895;
 // *********************************
 .c-h1 {
    position: relative;
+   padding: 15px;
+   margin-top: 30px;
+   font-size: 17px;
+   font-weight: bold;
+   color: $white;
+   text-align: left;
+   background-color: $primary;
+   border: dashed 2px $white;
+   box-shadow: 0 0 0 5px $primary;
+   &::after {
+      position: absolute;
+      top: -7px;
+      left: -7px;
+      content: '';
+      border-color: $black $secondary #826056;
+      border-style: solid;
+      border-width: 0 0 25px 25px;
+      box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+   }
+   @include mq('md') {
+      text-align: center;
+   }
+   @include mq('lg') {
+      max-width: 800px;
+      margin: 30px auto 0;
+      font-size: 20px;
+   }
+}
+.c-h2 {
+   position: relative;
    display: inline-block;
-   width: 80%;
+   width: 100%;
+   max-width: 800px;
    padding: 10px;
    margin-bottom: 30px;
    font-size: 17px;
    font-weight: bold;
    color: $white;
    text-align: center;
+   letter-spacing: 1.1px;
    background-color: $primary;
    border-radius: 25px 5px 5px 25px; /* 左側の角を丸く */
    &::before {
@@ -30,8 +62,59 @@ $primary-light: #efd895;
       content: '●';
    }
    @include mq('md') {
-      width: 50%;
       font-size: 19px;
+   }
+}
+.c-h2__contentSec {
+   max-width: 800px;
+   padding: 30px 20px;
+   margin: 0 auto;
+   font-size: 14px;
+   text-align: left;
+   letter-spacing: 1px;
+   background-color: $white;
+   border: 1px solid $gray-300;
+   border-radius: 5px;
+}
+.c-h3__wrap {
+   margin-bottom: 30px;
+   & > p {
+      margin-bottom: 5px;
+   }
+}
+.c-h3 {
+   margin-bottom: 12px;
+   font-size: 17px;
+   font-weight: bold;
+   text-align: left;
+   letter-spacing: 0;
+   &::before {
+      content: '● ';
+   }
+   &__image {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      border: 1px solid $gray-200;
+      border-radius: 5px;
+   }
+   &__figure {
+      position: relative;
+      margin: 0;
+      margin-bottom: 10px;
+   }
+   &__figcaption {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 3px 10px;
+      font-size: 11px;
+      color: $white;
+      text-align: right;
+      background-color: $black;
+      border-top-left-radius: 2px;
+      border-bottom-right-radius: 5px;
+      opacity: 0.5;
    }
 }
 .c-section {
@@ -41,7 +124,7 @@ $primary-light: #efd895;
       margin-top: 70px;
    }
    @include mq('lg') {
-      margin-top: 100px;
+      //
    }
 }
 
@@ -518,143 +601,32 @@ $footer-height: 60px;
          }
       }
    }
-   &__aboutContent {
-      padding: 15px;
-      font-size: 12px;
-      text-align: left;
-      letter-spacing: 1px;
-      background-color: $white;
-      border: 1px solid $gray-300;
-      border-radius: 5px;
-   }
+   // &__aboutContent {
+   //    padding: 15px;
+   //    font-size: 14px;
+   //    text-align: left;
+   //    letter-spacing: 1px;
+   //    background-color: $white;
+   //    border: 1px solid $gray-300;
+   //    border-radius: 5px;
+   // }
 }
 
 // *********************************
 // 制作物詳細
 // *********************************
 .detail {
-   // -------------------
-   // 目次
-   // -------------------
-   &__contentsLists {
-      padding-left: calc(50% - 100px);
-      text-align: left;
-   }
-
-   // -------------------
-   // 内容説明
-   // -------------------
-   &__title {
-      position: relative;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 17px;
-      font-weight: bold;
-      color: $white;
-      text-align: left;
-      background-color: $primary;
-      border: dashed 2px $white;
-      box-shadow: 0 0 0 5px $primary;
-      &::after {
-         position: absolute;
-         top: -7px;
-         left: -7px;
-         content: '';
-         border-color: $black $secondary #826056;
-         border-style: solid;
-         border-width: 0 0 25px 25px;
-         box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
-      }
-      @include mq('md') {
-         text-align: center;
-      }
-      @include mq('lg') {
-         max-width: 800px;
-         margin: 30px auto 0;
-      }
-   }
-   &__contentsListsSec {
-      & > .container {
-         @include mq('lg') {
-            max-width: 800px;
-         }
-      }
-   }
-   &__contentsWrap {
-      // border: 1px solid $gray-300;
-   }
-   &__contentWrap {
-      margin-bottom: 30px;
-      background-color: $white;
-      border: 1px solid $gray-300;
-      border-radius: 5px;
-      @include mq('md') {
-         display: flex;
-         min-height: 140px;
-      }
-   }
-   &__contentImage {
-      @include mq('md') {
-         width: 30%;
-      }
-      & > img {
-         width: 100%;
-         object-fit: cover;
-         height: 200px;
-         @include mq('md') {
-            height: 100%;
-         }
-      }
-   }
-   &__descriptionWrap {
-      width: 100%;
-      min-height: 150px;
-      padding: 15px;
-      text-align: left;
-   }
-   &__descriptionHead {
-      font-size: 16px;
-      font-weight: bold;
-   }
-   &__descriptionText {
-      margin: 0;
-      font-size: 12px;
-      text-align: left;
-      letter-spacing: 1px;
-      word-break: break-all;
-      white-space: pre-wrap;
-      @include mq('md') {
-         width: 70%;
-      }
-      @include mq('lg') {
-         width: 100%;
-      }
-   }
-
-   // -------------------
-   // 作成してみて
-   // -------------------
-   &__createSec {
-      & > .container {
-         @include mq('lg') {
-            max-width: 800px;
-         }
-      }
-   }
-   &__createText {
-      padding: 15px;
-      font-size: 12px;
-      text-align: left;
-      letter-spacing: 1px;
-      background-color: $white;
-      border: 1px solid $gray-300;
-      border-radius: 5px;
-      & > h2 {
-         margin: 20px 0 10px;
-         font-size: 16px;
-         font-weight: bold;
-      }
-   }
+   // &__contentSec {
+   //    max-width: 800px;
+   //    padding: 30px 20px;
+   //    margin: 0 auto;
+   //    font-size: 14px;
+   //    text-align: left;
+   //    letter-spacing: 1px;
+   //    background-color: $white;
+   //    border: 1px solid $gray-300;
+   //    border-radius: 5px;
+   // }
 }
 
 // *********************************

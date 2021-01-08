@@ -5,41 +5,36 @@
       </detail-title-section>
 
       <!-- 内容説明 -->
-      <detail-content-section :descriptions="descriptions"></detail-content-section>
+      <detail-content-section :h2="'主な機能の説明'" :id="'function'">
+         <template v-slot:content>
+            <div class="c-h3__wrap">
+               <h3 class="c-h3">プロトタイプ</h3>
+               <figure class="c-h3__figure">
+                  <img
+                     class="c-h3__image"
+                     :src="require('../../images/details/portfolio-prototype.png').default"
+                     alt=""
+                  />
+                  <figcaption class="c-h3__figcaption">左:フレームワーク / 右:プロトタイプ</figcaption>
+               </figure>
+               <p>
+                  ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+               </p>
+               <p>いいいいいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
+            </div>
+         </template>
+      </detail-content-section>
 
       <!-- 作成してみて -->
-      <detail-impression-section>
-         <template v-slot:impression>
-            <h2>苦労した点</h2>
-            <h2>工夫した点した点</h2>
+      <detail-content-section :h2="'作成してみて'" :id="'impression'">
+         <template v-slot:content>
+            <div class="c-h3__wrap">
+               <h3 class="c-h3">工夫した点</h3>
+            </div>
+            <div class="c-h3__wrap">
+               <h3 class="c-h3">苦労した点</h3>
+            </div>
          </template>
-      </detail-impression-section>
+      </detail-content-section>
    </main>
 </template>
-
-<script>
-export default {
-   data() {
-      return {
-         descriptions: [
-            {
-               title: 'ログイン機能の作成',
-               image: '/',
-               description: `ああ
-あああ、アイウエオ
-ああああああああ
-
-ああああああああああああ
-
-ああああああああああ`
-            },
-            {
-               title: '登録機能の作成',
-               image: '/',
-               description: ``
-            }
-         ]
-      };
-   }
-};
-</script>

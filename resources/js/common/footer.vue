@@ -1,9 +1,19 @@
 <template>
    <footer class="footer">
       <div class="container">
-         <div class="footer__imageWrap">
+         <a class="footer__imageWrap" :href="publicPath">
             <img :src="require('../../images/logo-white.svg').default" alt="ロゴ" />
-         </div>
+         </a>
       </div>
    </footer>
 </template>
+
+<script>
+export default {
+   computed: {
+      publicPath() {
+         return location.origin + '/';
+      }
+   }
+};
+</script>
