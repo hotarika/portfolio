@@ -95,6 +95,9 @@ $footer-height: 60px;
    }
    &__link {
       color: $secondary;
+      &:hover {
+         color: $secondary;
+      }
       & > i {
          margin-right: 3px;
          font-size: 15px;
