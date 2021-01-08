@@ -587,6 +587,7 @@ $footer-height: 60px;
       margin-bottom: 30px;
       background-color: $white;
       border: 1px solid $gray-300;
+      border-radius: 5px;
       @include mq('md') {
          display: flex;
          min-height: 140px;
@@ -647,6 +648,7 @@ $footer-height: 60px;
       letter-spacing: 1px;
       background-color: $white;
       border: 1px solid $gray-300;
+      border-radius: 5px;
       & > h2 {
          margin: 20px 0 10px;
          font-size: 16px;
