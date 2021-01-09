@@ -135,6 +135,12 @@ module.exports = {
          filename: 'sass.html',
          template: './resources/views/detail/sass.html',
          chunks: ['app']
+      }),
+      new HtmlWebpackPlugin({
+         title: 'オブジェクト指向詳細 | portfolio',
+         filename: 'objective.html',
+         template: './resources/views/detail/objective.html',
+         chunks: ['app']
       })
    ],
    resolve: {

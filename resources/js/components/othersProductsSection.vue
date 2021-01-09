@@ -1,7 +1,7 @@
 <template>
    <section id="portfolio" class="c-section home__portfolioSec">
       <div class="container">
-         <h2 class="c-h2">その他 制作物</h2>
+         <h2 class="c-h2 -other">その他 制作物</h2>
          <div class="home__portfolioItems">
             <!-- アイテム -->
             <template v-for="p of portfolio">
@@ -21,7 +21,7 @@ export default {
                title: 'Sass(SCSS)・レスポンシブの学習',
                image: 'sass.png',
                createDate: '2020/06/29',
-               design: 'レスポンシブ対応',
+               design: 'あり',
                learning: ['HTML', 'SCSS'],
                detail: 'sass.html',
                look: 'sass',
@@ -31,11 +31,21 @@ export default {
                title: 'WordPressの学習（歯医者HP）',
                image: 'wordpress.png',
                createDate: '2020/06/05',
-               design: 'PCのみ対応',
+               design: 'なし',
                learning: ['HTML', 'CSS', 'WordPress'],
                detail: 'wordpress.html',
                look: 'dentist',
                github: 'https://github.com/hotarika/dentist'
+            },
+            {
+               title: 'オブジェクト指向の学習',
+               image: 'objective.png',
+               createDate: '2021/05/25',
+               design: 'なし',
+               learning: ['HTML', 'CSS', 'PHP'],
+               detail: 'objective.html',
+               look: '/objective',
+               github: 'https://github.com/hotarika/objective'
             }
          ]
       };

@@ -9,7 +9,7 @@
             <div class="home__portfolioInfo">
                <div class="home__portfolioInfoItems">
                   <div class="home__portfolioInfoItem -date"><span>制作日</span>{{ portfolio.createDate }}</div>
-                  <div class="home__portfolioInfoItem -design"><span>デザイン対応</span>{{ portfolio.design }}</div>
+                  <div class="home__portfolioInfoItem -design"><span>スマホ対応</span>{{ portfolio.design }}</div>
                </div>
                <div class="home__portfolioUse">
                   <div class="home__portfolioUseHead">使用言語など</div>
