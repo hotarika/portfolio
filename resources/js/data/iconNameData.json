@@ -78,5 +78,10 @@
       "name": "webpack",
       "iconName": "webpack.svg",
       "cssClass": "-webpack"
+   },
+   {
+      "name": "WordPress",
+      "iconName": "wordpress.png",
+      "cssClass": "-wp"
    }
 ]

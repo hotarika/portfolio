@@ -18,24 +18,14 @@ export default {
       return {
          portfolio: [
             {
-               title: 'PHPの学習',
-               image: '',
-               createDate: '2021/01/04',
-               design: 'レスポンシブ対応',
-               learning: ['Bootstrap', 'PHP'],
-               detail: '',
-               look: '',
-               github: ''
-            },
-            {
-               title: 'あう家',
-               image: '',
-               createDate: '2021/01/04',
-               design: 'レスポンシブ対応',
-               learning: ['Bootstrap', 'PHP'],
-               detail: '',
-               look: '',
-               github: ''
+               title: 'WordPressの学習（歯医者HP）',
+               image: 'dentist.png',
+               createDate: '2020/06/05',
+               design: 'PCのみ対応',
+               learning: ['HTML', 'CSS', 'WordPress'],
+               detail: 'dentist.html',
+               look: 'dentist',
+               github: 'https://github.com/hotarika/dentist'
             }
          ]
       };

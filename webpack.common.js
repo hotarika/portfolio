@@ -119,9 +119,15 @@ module.exports = {
          chunks: ['app']
       }),
       new HtmlWebpackPlugin({
-         title: '制作詳細 | portfolio',
+         title: 'ポートフォリオ詳細 | portfolio',
          filename: 'portfolio.html',
          template: './resources/views/detail/portfolio.html',
+         chunks: ['app']
+      }),
+      new HtmlWebpackPlugin({
+         title: 'WordPress詳細 | portfolio',
+         filename: 'wordpress.html',
+         template: './resources/views/detail/wordpress.html',
          chunks: ['app']
       })
    ],

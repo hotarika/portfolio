@@ -10,7 +10,7 @@
    crossorigin="anonymous"
 />
 
-      <title>ホーム | ポートフォリオ</title>
+      <title>ホーム | portfolio</title>
    <link href="./css/app.css" rel="stylesheet"></head>
 
    <body class="bg-secondary">
@@ -46,21 +46,23 @@
             <!-- ポートフォリオ一覧 -->
             <portfolio-section></portfolio-section>
 
-            <!-- 学習過程でのポートフォリオ -->
+            <!-- その他制作物 -->
             <others-products-section></others-products-section>
 
             <!-- 学習内容 -->
             <learning-section></learning-section>
 
             <!-- 私について -->
-            <section id="about" class="c-section home__aboutSec">
-               <div class="container">
-                  <h1 class="c-h1">私について</h1>
-                  <div class="home__aboutContent">
-                     ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+            <detail-content-section :h2="'作成してみて'" :id="'about'">
+               <template v-slot:content>
+                  <div class="c-h3__wrap">
+                     <h3 class="c-h3">工夫した点</h3>
                   </div>
-               </div>
-            </section>
+                  <div class="c-h3__wrap">
+                     <h3 class="c-h3">苦労した点</h3>
+                  </div>
+               </template>
+            </detail-content-section>
          </main>
 
          <!-- header -->

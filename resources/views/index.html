@@ -2,7 +2,7 @@
 <html lang="ja">
    <head>
       <%= require('html-loader!./common/head.html') %>
-      <title>ホーム | ポートフォリオ</title>
+      <title><%= htmlWebpackPlugin.options.title %></title>
    </head>
 
    <body class="bg-secondary">
@@ -38,7 +38,7 @@
             <!-- ポートフォリオ一覧 -->
             <portfolio-section></portfolio-section>
 
-            <!-- 学習過程でのポートフォリオ -->
+            <!-- その他制作物 -->
             <others-products-section></others-products-section>
 
             <!-- 学習内容 -->
