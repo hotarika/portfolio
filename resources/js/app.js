@@ -21,6 +21,7 @@ Vue.component('detail-content-section', require('./components/detailContentSecti
 // 詳細ページ
 Vue.component('detail-portfolio-page', require('./components/detailPortfolioPage.vue').default);
 Vue.component('detail-wp-page', require('./components/detailWpPage.vue').default);
+Vue.component('detail-sass-page', require('./components/detailSassPage.vue').default);
 
 new Vue({
    el: '#app'

@@ -18,12 +18,22 @@ export default {
       return {
          portfolio: [
             {
+               title: 'Sass(SCSS)・レスポンシブの学習',
+               image: 'sass.png',
+               createDate: '2020/06/29',
+               design: 'レスポンシブ対応',
+               learning: ['HTML', 'SCSS'],
+               detail: 'sass.html',
+               look: 'sass',
+               github: 'https://github.com/hotarika/sass'
+            },
+            {
                title: 'WordPressの学習（歯医者HP）',
-               image: 'dentist.png',
+               image: 'wordpress.png',
                createDate: '2020/06/05',
                design: 'PCのみ対応',
                learning: ['HTML', 'CSS', 'WordPress'],
-               detail: 'dentist.html',
+               detail: 'wordpress.html',
                look: 'dentist',
                github: 'https://github.com/hotarika/dentist'
             }

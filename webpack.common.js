@@ -129,6 +129,12 @@ module.exports = {
          filename: 'wordpress.html',
          template: './resources/views/detail/wordpress.html',
          chunks: ['app']
+      }),
+      new HtmlWebpackPlugin({
+         title: 'Sass詳細 | portfolio',
+         filename: 'sass.html',
+         template: './resources/views/detail/sass.html',
+         chunks: ['app']
       })
    ],
    resolve: {
