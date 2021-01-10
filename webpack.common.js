@@ -147,6 +147,12 @@ module.exports = {
          filename: 'todo.html',
          template: './resources/views/detail/todo.html',
          chunks: ['app']
+      }),
+      new HtmlWebpackPlugin({
+         title: 'SNS詳細 | portfolio',
+         filename: 'sns.html',
+         template: './resources/views/detail/sns.html',
+         chunks: ['app']
       })
    ],
    resolve: {

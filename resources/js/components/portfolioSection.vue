@@ -22,7 +22,7 @@ export default {
                image: 'portfoliosite.png',
                createDate: '2021/01/04',
                design: 'レスポンシブ対応',
-               learning: ['HTML', 'SCSS', 'Bootstrap (一部機能)', 'Vue.js', 'webpack'],
+               learning: ['HTML', 'SCSS', 'Bootstrap (一部機能)', 'Vue.js (コンポーネント化)', 'webpack'],
                detail: 'portfolio.html',
                look: '/',
                github: 'https://github.com/hotarika/portfolio'

@@ -20,12 +20,22 @@ export default {
             {
                title: 'TODOアプリの制作',
                image: 'todo.png',
-               createDate: '2020/06/29',
+               createDate: '2020/10/09',
                design: '未対応',
                learning: ['Vue.js(非同期処理含む)', 'Laravel'],
                detail: 'todo.html',
                look: 'sass',
                github: 'https://github.com/hotarika/sass'
+            },
+            {
+               title: '簡易SNSアプリ',
+               image: 'sns.png',
+               createDate: '2020/09/15',
+               design: '未対応',
+               learning: ['Vue.js(非同期処理含む)', 'Laravel'],
+               detail: 'sns.html',
+               look: 'sns',
+               github: 'https://github.com/hotarika/sns'
             },
             {
                title: 'Sass(SCSS)・レスポンシブの学習',
