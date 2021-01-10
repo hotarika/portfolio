@@ -23,6 +23,7 @@ Vue.component('detail-portfolio-page', require('./components/detailPortfolioPage
 Vue.component('detail-wp-page', require('./components/detailWpPage.vue').default);
 Vue.component('detail-sass-page', require('./components/detailSassPage.vue').default);
 Vue.component('detail-objective-page', require('./components/detailObjectivePage.vue').default);
+Vue.component('detail-todo-page', require('./components/detailTodoPage.vue').default);
 
 new Vue({
    el: '#app'

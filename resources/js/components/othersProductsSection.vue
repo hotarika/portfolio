@@ -18,6 +18,16 @@ export default {
       return {
          portfolio: [
             {
+               title: 'TODOアプリの制作',
+               image: 'todo.png',
+               createDate: '2020/06/29',
+               design: '未対応',
+               learning: ['Vue.js(非同期処理含む)', 'Laravel'],
+               detail: 'todo.html',
+               look: 'sass',
+               github: 'https://github.com/hotarika/sass'
+            },
+            {
                title: 'Sass(SCSS)・レスポンシブの学習',
                image: 'sass.png',
                createDate: '2020/06/29',
@@ -31,7 +41,7 @@ export default {
                title: 'WordPressの学習（歯医者HP）',
                image: 'wordpress.png',
                createDate: '2020/06/05',
-               design: 'なし',
+               design: '未対応',
                learning: ['HTML', 'CSS', 'WordPress'],
                detail: 'wordpress.html',
                look: 'dentist',
@@ -41,7 +51,7 @@ export default {
                title: 'オブジェクト指向の学習',
                image: 'objective.png',
                createDate: '2021/05/25',
-               design: 'なし',
+               design: '未対応',
                learning: ['HTML', 'CSS', 'PHP'],
                detail: 'objective.html',
                look: '/objective',

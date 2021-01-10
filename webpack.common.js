@@ -141,6 +141,12 @@ module.exports = {
          filename: 'objective.html',
          template: './resources/views/detail/objective.html',
          chunks: ['app']
+      }),
+      new HtmlWebpackPlugin({
+         title: 'Todo詳細 | portfolio',
+         filename: 'todo.html',
+         template: './resources/views/detail/todo.html',
+         chunks: ['app']
       })
    ],
    resolve: {
