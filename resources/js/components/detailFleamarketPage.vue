@@ -1,8 +1,10 @@
 <template>
    <main class="main detail">
       <detail-title-section>
-         <template v-slot:title>フリマアプリ (PHPによるフルクラッチ)</template>
-         <template v-slot:createDate><div class="c-h1__createDate">制作日：2020年 5月</div></template>
+         <template v-slot:title>{{ datum.title }}</template>
+         <template v-slot:createDate>
+            <div class="c-h1__createDate">制作日：{{ datum.createDate }}</div></template
+         >
       </detail-title-section>
 
       <!-- 主な機能の説明 -->
@@ -12,7 +14,7 @@
             <div class="c-h3__wrap">
                <h3 class="c-h3">デモページ</h3>
                <div class="c-demo">
-                  <a href="">デモページはこちら</a>
+                  <a :href="datum.look">デモページはこちら</a>
                   <div>メールアドレス：test1@example.com</div>
                   <div>パスワード：rootroot</div>
                </div>
@@ -125,3 +127,23 @@
       </detail-content-section>
    </main>
 </template>
+
+<script>
+import productsData from '../data/productsData.json';
+
+export default {
+   data() {
+      return {
+         datum: []
+      };
+   },
+   mounted() {
+      productsData.forEach((el) => {
+         if (el.id === 1) {
+            console.log(el);
+            this.datum = el;
+         }
+      });
+   }
+};
+</script>

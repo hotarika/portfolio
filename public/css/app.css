@@ -7503,7 +7503,8 @@ body {
     bottom: -30px;
     font-size: 13px;
     font-weight: normal;
-    color: #000; }
+    color: #000;
+    letter-spacing: 0.7px; }
   .c-h1::after {
     position: absolute;
     top: -7px;

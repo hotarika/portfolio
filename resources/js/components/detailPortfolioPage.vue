@@ -1,8 +1,10 @@
 <template>
    <main class="main detail">
       <detail-title-section>
-         <template v-slot:title>ポートフォリオのまとめサイト</template>
-         <template v-slot:createDate><div class="c-h1__createDate">制作日：2021年 1月</div></template>
+         <template v-slot:title>{{ datum.title }}</template>
+         <template v-slot:createDate>
+            <div class="c-h1__createDate">制作日：{{ datum.createDate }}</div></template
+         >
       </detail-title-section>
 
       <!-- 主な機能の説明 -->
@@ -59,3 +61,23 @@
       </detail-content-section>
    </main>
 </template>
+
+<script>
+import productsData from '../data/productsData.json';
+
+export default {
+   data() {
+      return {
+         datum: []
+      };
+   },
+   mounted() {
+      productsData.forEach((el) => {
+         if (el.id === 7) {
+            console.log(el);
+            this.datum = el;
+         }
+      });
+   }
+};
+</script>

@@ -1,0 +1,86 @@
+[
+   {
+      "id": 1,
+      "title": "フリマアプリ (PHPによるフルクラッチ)",
+      "image": "fleamarket.png",
+      "createDate": "2020/05/19",
+      "design": "未対応",
+      "learning": ["HTML", "CSS", "jQuery", "PHP (フルスクラッチ)"],
+      "detail": "fleamarket.html",
+      "look": "/fleamarket",
+      "github": "https://github.com/hotarika/fleamarket",
+      "section": "portfolio"
+   },
+   {
+      "id": 2,
+      "title": "オブジェクト指向の学習",
+      "image": "objective.png",
+      "createDate": "2021/05/25",
+      "design": "未対応",
+      "learning": ["HTML", "CSS", "PHP"],
+      "detail": "objective.html",
+      "look": "/objective",
+      "github": "https://github.com/hotarika/objective",
+      "section": "other"
+   },
+   {
+      "id": 3,
+      "title": "WordPressの学習（歯医者HP）",
+      "image": "wordpress.png",
+      "createDate": "2020/06/05",
+      "design": "未対応",
+      "learning": ["HTML", "CSS", "WordPress"],
+      "detail": "wordpress.html",
+      "look": "/dentist",
+      "github": "https://github.com/hotarika/dentist",
+      "section": "other"
+   },
+   {
+      "id": 4,
+      "title": "Sass(SCSS)・レスポンシブの学習",
+      "image": "sass.png",
+      "createDate": "2020/06/29",
+      "design": "あり",
+      "learning": ["HTML", "SCSS"],
+      "detail": "sass.html",
+      "look": "/sass",
+      "github": "https://github.com/hotarika/sass",
+      "section": "other"
+   },
+   {
+      "id": 5,
+      "title": "簡易SNSアプリ",
+      "image": "sns.png",
+      "createDate": "2020/09/15",
+      "design": "未対応",
+      "learning": ["Vue.js(非同期処理含む)", "Laravel"],
+      "detail": "sns.html",
+      "look": "/sns",
+      "github": "https://github.com/hotarika/sns",
+      "section": "other"
+   },
+   {
+      "id": 6,
+      "title": "TODOアプリの制作",
+      "image": "todo.png",
+      "createDate": "2020/10/09",
+      "design": "未対応",
+      "learning": ["Vue.js(非同期処理含む)", "Laravel"],
+      "detail": "todo.html",
+      "look": "/sass",
+      "github": "https://github.com/hotarika/sass",
+      "section": "other"
+   },
+   {
+      "id": 7,
+      "title": "ポートフォリオのまとめサイト",
+      "image": "portfoliosite.png",
+      "createDate": "2021/01/04",
+      "design": "レスポンシブ対応",
+      "learning": ["HTML", "SCSS", "Bootstrap (一部機能)", "Vue.js (コンポーネント化)", "webpack"],
+      "detail": "portfolio.html",
+      "look": "/",
+      "github": "https://github.com/hotarika/portfolio",
+      "section": "portfolio"
+   }
+]
