@@ -990,6 +990,20 @@ var render = function() {
             fn: function() {
               return [
                 _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [_vm._v("デモページ")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-demo" }, [
+                    _c("a", { attrs: { href: "" } }, [
+                      _vm._v("デモページはこちら")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", [_vm._v("メールアドレス：test1@example.com")]),
+                    _vm._v(" "),
+                    _c("div", [_vm._v("パスワード：rootroot")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "c-h3__wrap" }, [
                   _c("h3", { staticClass: "c-h3" }, [_vm._v("画面構成")]),
                   _vm._v(" "),
                   _c("img", {
@@ -1616,12 +1630,17 @@ var render = function() {
             fn: function() {
               return [
                 _c("div", { staticClass: "c-h3__wrap" }, [
-                  _c("h3", { staticClass: "c-h3" }, [
-                    _vm._v("ログインパスワード")
-                  ]),
-                  _vm._v("\n              メールアドレス：test1@example.com"),
-                  _c("br"),
-                  _vm._v("\n              パスワード： rootroot\n         ")
+                  _c("h3", { staticClass: "c-h3" }, [_vm._v("デモページ")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-demo" }, [
+                    _c("a", { attrs: { href: "" } }, [
+                      _vm._v("デモページはこちら")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", [_vm._v("メールアドレス：test1@example.com")]),
+                    _vm._v(" "),
+                    _c("div", [_vm._v("パスワード：rootroot")])
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "c-h3__wrap" }, [
@@ -1806,6 +1825,20 @@ var render = function() {
             fn: function() {
               return [
                 _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [_vm._v("デモページ")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-demo" }, [
+                    _c("a", { attrs: { href: "" } }, [
+                      _vm._v("デモページはこちら")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", [_vm._v("メールアドレス：test1@example.com")]),
+                    _vm._v(" "),
+                    _c("div", [_vm._v("パスワード：rootroot")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "c-h3__wrap" }, [
                   _c("h3", { staticClass: "c-h3" }, [
                     _vm._v("ページ全体のデザイン")
                   ]),
@@ -1818,6 +1851,24 @@ var render = function() {
                       alt: ""
                     }
                   })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [_vm._v("主な機能")]),
+                  _vm._v(
+                    "\n            下記は全て非同期処理（axios）によってデータを処理しています。\n            "
+                  ),
+                  _c("ul", [
+                    _c("li", [_vm._v("TODOの追加機能")]),
+                    _vm._v(" "),
+                    _c("li", [_vm._v("TODOの削除機能")]),
+                    _vm._v(" "),
+                    _c("li", [_vm._v("TODOの編集機能")]),
+                    _vm._v(" "),
+                    _c("li", [_vm._v("TODOの検索機能")]),
+                    _vm._v(" "),
+                    _c("li", [_vm._v("TODOの完了機能")])
+                  ])
                 ])
               ]
             },

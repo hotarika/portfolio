@@ -7626,6 +7626,17 @@ body {
     border-top-left-radius: 5px;
     border-bottom-right-radius: 2px; }
 
+.c-demo {
+  margin-left: 30px; }
+  .c-demo > a {
+    display: inline-block;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #66463c;
+    border-radius: 5px; }
+
 .c-section {
   margin-top: 50px;
   text-align: center; }

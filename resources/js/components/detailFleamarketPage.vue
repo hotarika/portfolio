@@ -8,6 +8,17 @@
       <!-- 主な機能の説明 -->
       <detail-content-section :h2="'主な機能・実装について'" :id="'function'">
          <template v-slot:content>
+            <!-- デモページ -->
+            <div class="c-h3__wrap">
+               <h3 class="c-h3">デモページ</h3>
+               <div class="c-demo">
+                  <a href="">デモページはこちら</a>
+                  <div>メールアドレス：test1@example.com</div>
+                  <div>パスワード：rootroot</div>
+               </div>
+            </div>
+
+            <!-- 画面構成 -->
             <div class="c-h3__wrap">
                <h3 class="c-h3">画面構成</h3>
                <img class="c-image" :src="require('../../images/details/fleamarket-transition.png').default" alt="" />
