@@ -824,26 +824,6 @@ var render = function() {
               style: _vm.homeNav
             },
             [_vm._m(2)]
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              staticClass: "header__list",
-              staticStyle: { display: "none" },
-              style: _vm.detailNav
-            },
-            [_vm._m(3)]
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              staticClass: "header__list",
-              staticStyle: { display: "none" },
-              style: _vm.detailNav
-            },
-            [_vm._m(4)]
           )
         ])
       ])
@@ -879,29 +859,6 @@ var staticRenderFns = [
       _c("i", { staticClass: "far fa-smile" }),
       _vm._v("私について")
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "header__link", attrs: { href: "#function" } },
-      [
-        _c("i", { staticClass: "fas fa-chalkboard-teacher" }),
-        _vm._v("内容説明")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "header__link", attrs: { href: "#impression" } },
-      [_c("i", { staticClass: "far fa-comment-dots" }), _vm._v("作成してみて")]
-    )
   }
 ]
 render._withStripped = true
@@ -1228,7 +1185,7 @@ var render = function() {
           {
             key: "title",
             fn: function() {
-              return [_vm._v("Sass(SCSS)・レスポンシブの学習")]
+              return [_vm._v("オブジェクト指向の学習")]
             },
             proxy: true
           },
@@ -1258,6 +1215,12 @@ var render = function() {
                     _vm._v("ページ全体のデザイン")
                   ]),
                   _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n               抽象的なクラス（自分と相手の共通事項）を作成し、それを継承してさらに自分と相手それぞれのメソッドとプロパティを記述し実装しています。\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
                   _c("img", {
                     staticClass: "c-image",
                     staticStyle: { width: "70%", "margin-bottom": "20px" },
@@ -1277,6 +1240,37 @@ var render = function() {
                       alt: ""
                     }
                   })
+                ])
+              ]
+            },
+            proxy: true
+          }
+        ])
+      }),
+      _vm._v(" "),
+      _c("detail-content-section", {
+        attrs: { h2: "作成してみて", id: "impression" },
+        scopedSlots: _vm._u([
+          {
+            key: "content",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [
+                    _vm._v("このポートフォリを制作する上で学習したこと")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("p", [
+                      _vm._v(
+                        "\n                  この制作物はオブジェクト指向を学ぶために制作しました。ここで学習した内容は、フレームワーク（Laravel）を使用する上で役立っています。"
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "ただ、この制作物でオブジェクト指向をしっかり理解できたのかといえば、まだまだ勉強不足だと感じています。ですので、今後も継続的に学習していく必要があると感じています。\n               "
+                      )
+                    ])
+                  ])
                 ])
               ]
             },
@@ -2482,7 +2476,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("images/objective.34e94777747007ba3b3046ca517f898d.png");
+/* harmony default export */ __webpack_exports__["default"] = ("images/objective.d1fec35eee716007a60d5b82c3c18997.png");
 
 /***/ }),
 

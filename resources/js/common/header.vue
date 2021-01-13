@@ -15,12 +15,12 @@
                <li class="header__list" style="display: none" :style="homeNav">
                   <a class="header__link" href="#about"><i class="far fa-smile"></i>私について</a>
                </li>
-               <li class="header__list" style="display: none" :style="detailNav">
+               <!-- <li class="header__list" style="display: none" :style="detailNav">
                   <a class="header__link" href="#function"><i class="fas fa-chalkboard-teacher"></i>内容説明</a>
                </li>
                <li class="header__list" style="display: none" :style="detailNav">
                   <a class="header__link" href="#impression"><i class="far fa-comment-dots"></i>作成してみて</a>
-               </li>
+               </li> -->
             </ul>
          </div>
       </div>
