@@ -824,6 +824,26 @@ var render = function() {
               style: _vm.homeNav
             },
             [_vm._m(2)]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              staticClass: "header__list",
+              staticStyle: { display: "none" },
+              style: _vm.detailNav
+            },
+            [_vm._m(3)]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              staticClass: "header__list",
+              staticStyle: { display: "none" },
+              style: _vm.detailNav
+            },
+            [_vm._m(4)]
           )
         ])
       ])
@@ -859,6 +879,29 @@ var staticRenderFns = [
       _c("i", { staticClass: "far fa-smile" }),
       _vm._v("私について")
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "header__link", attrs: { href: "#function" } },
+      [
+        _c("i", { staticClass: "fas fa-chalkboard-teacher" }),
+        _vm._v("内容説明")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "header__link", attrs: { href: "#impression" } },
+      [_c("i", { staticClass: "far fa-comment-dots" }), _vm._v("作成してみて")]
+    )
   }
 ]
 render._withStripped = true
@@ -1313,7 +1356,7 @@ var render = function() {
           {
             key: "title",
             fn: function() {
-              return [_vm._v("ポートフォリオサイトの制作")]
+              return [_vm._v("ポートフォリオのまとめサイト")]
             },
             proxy: true
           },
@@ -1547,7 +1590,7 @@ var render = function() {
           {
             key: "title",
             fn: function() {
-              return [_vm._v("TODOアプリの制作")]
+              return [_vm._v("簡易SNSアプリ")]
             },
             proxy: true
           },
@@ -1572,6 +1615,15 @@ var render = function() {
             key: "content",
             fn: function() {
               return [
+                _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [
+                    _vm._v("ログインパスワード")
+                  ]),
+                  _vm._v("\n              メールアドレス：test1@example.com"),
+                  _c("br"),
+                  _vm._v("\n              パスワード： rootroot\n         ")
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "c-h3__wrap" }, [
                   _c("h3", { staticClass: "c-h3" }, [
                     _vm._v("ページ全体のデザイン")
@@ -1628,6 +1680,31 @@ var render = function() {
                       alt: ""
                     }
                   })
+                ])
+              ]
+            },
+            proxy: true
+          }
+        ])
+      }),
+      _vm._v(" "),
+      _c("detail-content-section", {
+        attrs: { h2: "作成してみて", id: "impression" },
+        scopedSlots: _vm._u([
+          {
+            key: "content",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [
+                    _vm._v("このポートフォリを制作する上で学習したこと")
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [_vm._v("非同期通信でいいね機能を実装")]),
+                    _vm._v(" "),
+                    _c("li", [_vm._v("フォームのテストコードの記述")])
+                  ])
                 ])
               ]
             },
@@ -2385,7 +2462,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("images/sns-user.0f5de1c54fd1912e6550376022d4a754.png");
+/* harmony default export */ __webpack_exports__["default"] = ("images/sns-user.9a7c7454022e3cbfc29a481a70a297f5.png");
 
 /***/ }),
 
