@@ -11,13 +11,13 @@
             <div class="c-h3__wrap">
                <h3 class="c-h3">ページ全体のデザイン</h3>
                <img
-                  class="c-h3__image"
+                  class="c-image"
                   style="width: 70%; margin-bottom: 20px"
                   :src="require('../../images/details/objective-1.png').default"
                   alt=""
                />
                <img
-                  class="c-h3__image"
+                  class="c-image"
                   style="width: 70%"
                   :src="require('../../images/details/objective-2.png').default"
                   alt=""

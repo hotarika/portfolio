@@ -10,13 +10,9 @@
             <!-- プロトタイプ -->
             <div class="c-h3__wrap">
                <h3 class="c-h3">プロトタイプ</h3>
-               <figure class="c-h3__figure">
-                  <img
-                     class="c-h3__image"
-                     :src="require('../../images/details/portfolio-prototype.png').default"
-                     alt=""
-                  />
-                  <figcaption class="c-h3__figcaption">左:フレームワーク / 右:プロトタイプ</figcaption>
+               <figure class="c-figure">
+                  <img class="c-image" :src="require('../../images/details/portfolio-prototype.png').default" alt="" />
+                  <figcaption class="c-figcaption -bottom_right">左:フレームワーク / 右:プロトタイプ</figcaption>
                </figure>
                <p>
                   プロトタイプで概ね構成を決めてから、あとはコーディングを進めながらデザインを考えていきました。ですので、上記のプロトタイプと実際のデザインには相違がありますが、プロトタイプの状況を確認していただくために、そのまま掲載しています。

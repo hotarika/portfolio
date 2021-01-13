@@ -12,7 +12,7 @@
                <h3 class="c-h3">ページ全体のデザイン</h3>
 
                <img
-                  class="c-h3__image"
+                  class="c-image"
                   style="border: none"
                   :src="require('../../images/details/dentist-all-pages.png').default"
                   alt=""

@@ -11,12 +11,7 @@
             <div class="c-h3__wrap">
                <h3 class="c-h3">ページ全体のデザイン</h3>
 
-               <img
-                  class="c-h3__image"
-                  style="width: 55%"
-                  :src="require('../../images/details/todo.png').default"
-                  alt=""
-               />
+               <img class="c-image" style="width: 55%" :src="require('../../images/details/todo.png').default" alt="" />
             </div>
          </template>
       </detail-content-section>
