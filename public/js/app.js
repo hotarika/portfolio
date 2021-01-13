@@ -824,26 +824,6 @@ var render = function() {
               style: _vm.homeNav
             },
             [_vm._m(2)]
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              staticClass: "header__list",
-              staticStyle: { display: "none" },
-              style: _vm.detailNav
-            },
-            [_vm._m(3)]
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              staticClass: "header__list",
-              staticStyle: { display: "none" },
-              style: _vm.detailNav
-            },
-            [_vm._m(4)]
           )
         ])
       ])
@@ -879,29 +859,6 @@ var staticRenderFns = [
       _c("i", { staticClass: "far fa-smile" }),
       _vm._v("私について")
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "header__link", attrs: { href: "#function" } },
-      [
-        _c("i", { staticClass: "fas fa-chalkboard-teacher" }),
-        _vm._v("内容説明")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "header__link", attrs: { href: "#impression" } },
-      [_c("i", { staticClass: "far fa-comment-dots" }), _vm._v("作成してみて")]
-    )
   }
 ]
 render._withStripped = true
