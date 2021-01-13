@@ -18,7 +18,7 @@ export default {
       return {
          portfolio: [
             {
-               title: 'TODOアプリの制作',
+               title: 'TODOアプリの制作 #6',
                image: 'todo.png',
                createDate: '2020/10/09',
                design: '未対応',
@@ -28,7 +28,7 @@ export default {
                github: 'https://github.com/hotarika/sass'
             },
             {
-               title: '簡易SNSアプリ',
+               title: '簡易SNSアプリ #5',
                image: 'sns.png',
                createDate: '2020/09/15',
                design: '未対応',
@@ -38,7 +38,7 @@ export default {
                github: 'https://github.com/hotarika/sns'
             },
             {
-               title: 'Sass(SCSS)・レスポンシブの学習',
+               title: 'Sass(SCSS)・レスポンシブの学習 #4',
                image: 'sass.png',
                createDate: '2020/06/29',
                design: 'あり',
@@ -48,7 +48,7 @@ export default {
                github: 'https://github.com/hotarika/sass'
             },
             {
-               title: 'WordPressの学習（歯医者HP）',
+               title: 'WordPressの学習（歯医者HP）#3',
                image: 'wordpress.png',
                createDate: '2020/06/05',
                design: '未対応',
@@ -58,7 +58,7 @@ export default {
                github: 'https://github.com/hotarika/dentist'
             },
             {
-               title: 'オブジェクト指向の学習',
+               title: 'オブジェクト指向の学習 #2',
                image: 'objective.png',
                createDate: '2021/05/25',
                design: '未対応',

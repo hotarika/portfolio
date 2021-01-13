@@ -18,7 +18,7 @@ export default {
       return {
          portfolio: [
             {
-               title: 'ポートフォリオのまとめサイト',
+               title: 'ポートフォリオのまとめサイト #7',
                image: 'portfoliosite.png',
                createDate: '2021/01/04',
                design: 'レスポンシブ対応',
@@ -28,7 +28,7 @@ export default {
                github: 'https://github.com/hotarika/portfolio'
             },
             {
-               title: 'フリマアプリ (PHPによるフルクラッチ)',
+               title: 'フリマアプリ (PHPによるフルクラッチ) #1',
                image: 'fleamarket.png',
                createDate: '2020/05/19',
                design: '未対応',

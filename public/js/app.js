@@ -476,7 +476,7 @@ __webpack_require__.r(__webpack_exports__);
   data() {
     return {
       portfolio: [{
-        title: 'TODOアプリの制作',
+        title: 'TODOアプリの制作 #6',
         image: 'todo.png',
         createDate: '2020/10/09',
         design: '未対応',
@@ -485,7 +485,7 @@ __webpack_require__.r(__webpack_exports__);
         look: 'sass',
         github: 'https://github.com/hotarika/sass'
       }, {
-        title: '簡易SNSアプリ',
+        title: '簡易SNSアプリ #5',
         image: 'sns.png',
         createDate: '2020/09/15',
         design: '未対応',
@@ -494,7 +494,7 @@ __webpack_require__.r(__webpack_exports__);
         look: 'sns',
         github: 'https://github.com/hotarika/sns'
       }, {
-        title: 'Sass(SCSS)・レスポンシブの学習',
+        title: 'Sass(SCSS)・レスポンシブの学習 #4',
         image: 'sass.png',
         createDate: '2020/06/29',
         design: 'あり',
@@ -503,7 +503,7 @@ __webpack_require__.r(__webpack_exports__);
         look: 'sass',
         github: 'https://github.com/hotarika/sass'
       }, {
-        title: 'WordPressの学習（歯医者HP）',
+        title: 'WordPressの学習（歯医者HP）#3',
         image: 'wordpress.png',
         createDate: '2020/06/05',
         design: '未対応',
@@ -512,7 +512,7 @@ __webpack_require__.r(__webpack_exports__);
         look: 'dentist',
         github: 'https://github.com/hotarika/dentist'
       }, {
-        title: 'オブジェクト指向の学習',
+        title: 'オブジェクト指向の学習 #2',
         image: 'objective.png',
         createDate: '2021/05/25',
         design: '未対応',
@@ -636,7 +636,7 @@ __webpack_require__.r(__webpack_exports__);
   data() {
     return {
       portfolio: [{
-        title: 'ポートフォリオのまとめサイト',
+        title: 'ポートフォリオのまとめサイト #7',
         image: 'portfoliosite.png',
         createDate: '2021/01/04',
         design: 'レスポンシブ対応',
@@ -645,7 +645,7 @@ __webpack_require__.r(__webpack_exports__);
         look: '/',
         github: 'https://github.com/hotarika/portfolio'
       }, {
-        title: 'フリマアプリ (PHPによるフルクラッチ)',
+        title: 'フリマアプリ (PHPによるフルクラッチ) #1',
         image: 'fleamarket.png',
         createDate: '2020/05/19',
         design: '未対応',
