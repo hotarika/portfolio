@@ -2,6 +2,7 @@
    <main class="main detail">
       <detail-title-section>
          <template v-slot:title>ポートフォリオサイトの制作</template>
+         <template v-slot:createDate><div class="c-h1__createDate">制作日：2021年 1月</div></template>
       </detail-title-section>
 
       <!-- 主な機能の説明 -->

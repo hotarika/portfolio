@@ -2,6 +2,7 @@
    <main class="main detail">
       <detail-title-section>
          <template v-slot:title>TODOアプリの制作</template>
+         <template v-slot:createDate><div class="c-h1__createDate">制作日：2020年 10月</div></template>
       </detail-title-section>
 
       <!-- 主な機能の説明 -->

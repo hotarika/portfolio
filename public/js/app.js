@@ -1231,6 +1231,17 @@ var render = function() {
               return [_vm._v("Sass(SCSS)・レスポンシブの学習")]
             },
             proxy: true
+          },
+          {
+            key: "createDate",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h1__createDate" }, [
+                  _vm._v("制作日：2020年 5月")
+                ])
+              ]
+            },
+            proxy: true
           }
         ])
       }),
@@ -1309,6 +1320,17 @@ var render = function() {
             key: "title",
             fn: function() {
               return [_vm._v("ポートフォリオサイトの制作")]
+            },
+            proxy: true
+          },
+          {
+            key: "createDate",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h1__createDate" }, [
+                  _vm._v("制作日：2021年 1月")
+                ])
+              ]
             },
             proxy: true
           }
@@ -1453,6 +1475,17 @@ var render = function() {
               return [_vm._v("Sass(SCSS)・レスポンシブの学習")]
             },
             proxy: true
+          },
+          {
+            key: "createDate",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h1__createDate" }, [
+                  _vm._v("制作日：2020年 6月")
+                ])
+              ]
+            },
+            proxy: true
           }
         ])
       }),
@@ -1521,6 +1554,17 @@ var render = function() {
             key: "title",
             fn: function() {
               return [_vm._v("TODOアプリの制作")]
+            },
+            proxy: true
+          },
+          {
+            key: "createDate",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h1__createDate" }, [
+                  _vm._v("制作日：2020年 9月")
+                ])
+              ]
             },
             proxy: true
           }
@@ -1668,6 +1712,17 @@ var render = function() {
               return [_vm._v("TODOアプリの制作")]
             },
             proxy: true
+          },
+          {
+            key: "createDate",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h1__createDate" }, [
+                  _vm._v("制作日：2020年 10月")
+                ])
+              ]
+            },
+            proxy: true
           }
         ])
       }),
@@ -1735,6 +1790,17 @@ var render = function() {
             key: "title",
             fn: function() {
               return [_vm._v("WordPressの学習（歯医者HP）")]
+            },
+            proxy: true
+          },
+          {
+            key: "createDate",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h1__createDate" }, [
+                  _vm._v("制作日：2020年 6月")
+                ])
+              ]
             },
             proxy: true
           }
