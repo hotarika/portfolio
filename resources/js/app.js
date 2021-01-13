@@ -25,6 +25,7 @@ Vue.component('detail-sass-page', require('./components/detailSassPage.vue').def
 Vue.component('detail-objective-page', require('./components/detailObjectivePage.vue').default);
 Vue.component('detail-todo-page', require('./components/detailTodoPage.vue').default);
 Vue.component('detail-sns-page', require('./components/detailSnsPage.vue').default);
+Vue.component('detail-fleamarket-page', require('./components/detailFleamarketPage.vue').default);
 
 new Vue({
    el: '#app'

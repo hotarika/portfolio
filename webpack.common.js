@@ -153,6 +153,12 @@ module.exports = {
          filename: 'sns.html',
          template: './resources/views/detail/sns.html',
          chunks: ['app']
+      }),
+      new HtmlWebpackPlugin({
+         title: 'Flea Market詳細 | portfolio',
+         filename: 'fleamarket.html',
+         template: './resources/views/detail/fleamarket.html',
+         chunks: ['app']
       })
    ],
    resolve: {

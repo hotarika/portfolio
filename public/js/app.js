@@ -640,10 +640,19 @@ __webpack_require__.r(__webpack_exports__);
         image: 'portfoliosite.png',
         createDate: '2021/01/04',
         design: 'レスポンシブ対応',
-        learning: ['HTML', 'SCSS', 'Bootstrap (一部機能)', 'Vue.js', 'webpack'],
+        learning: ['HTML', 'SCSS', 'Bootstrap (一部機能)', 'Vue.js (コンポーネント化)', 'webpack'],
         detail: 'portfolio.html',
         look: '/',
         github: 'https://github.com/hotarika/portfolio'
+      }, {
+        title: 'フリマアプリ (PHPによるフルクラッチ)',
+        image: 'fleamarket.png',
+        createDate: '2020/05/19',
+        design: '未対応',
+        learning: ['HTML', 'CSS', 'jQuery', 'PHP (フルスクラッチ)'],
+        detail: 'fleamarket.html',
+        look: '/',
+        github: 'https://github.com/hotarika/fleamarket'
       }]
     };
   }
@@ -931,6 +940,270 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/detailFleamarketPage.vue?vue&type=template&id=0823ca6e&":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/detailFleamarketPage.vue?vue&type=template&id=0823ca6e& ***!
+  \***********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "main",
+    { staticClass: "main detail" },
+    [
+      _c("detail-title-section", {
+        scopedSlots: _vm._u([
+          {
+            key: "title",
+            fn: function() {
+              return [_vm._v("フリマアプリ (PHPによるフルクラッチ)")]
+            },
+            proxy: true
+          },
+          {
+            key: "createDate",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h1__createDate" }, [
+                  _vm._v("制作日：2020年 5月")
+                ])
+              ]
+            },
+            proxy: true
+          }
+        ])
+      }),
+      _vm._v(" "),
+      _c("detail-content-section", {
+        attrs: { h2: "主な機能・実装について", id: "function" },
+        scopedSlots: _vm._u([
+          {
+            key: "content",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [_vm._v("画面構成")]),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "c-image",
+                    attrs: {
+                      src: __webpack_require__(/*! ../../images/details/fleamarket-transition.png */ "./resources/images/details/fleamarket-transition.png")
+                        .default,
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [_vm._v("主なページ")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [_vm._v("出品商品一覧")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                  出品商品は、カテゴリ・表示順（金額昇順・降順）により絞り込みを行うことができます（クエリパラメーターの条件からSQLでデータベースにアクセスし、情報を取得）。また、PHPのみでページネーションを実装しました。\n               "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "c-image",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../images/details/fleamarket-index.png */ "./resources/images/details/fleamarket-index.png")
+                          .default,
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [_vm._v("出品詳細")]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "c-image",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../images/details/fleamarket-detail.png */ "./resources/images/details/fleamarket-detail.png")
+                          .default,
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [_vm._v("マイページ")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                  マイページでは、「商品登録一覧」「連絡掲示板一覧」「お気に入り一覧」を表示しています。連絡掲示板に関しては、最新のメッセージを１件表示するようなSQLを記述しています。\n               "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "c-image",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../images/details/fleamarket-mypage.png */ "./resources/images/details/fleamarket-mypage.png")
+                          .default,
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [
+                      _vm._v("商品出品・編集")
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "c-image",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../images/details/fleamarket-registerProduct.png */ "./resources/images/details/fleamarket-registerProduct.png")
+                          .default,
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [_vm._v("販売履歴")]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "c-image",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../images/details/fleamarket-history.png */ "./resources/images/details/fleamarket-history.png")
+                          .default,
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [
+                      _vm._v("プロフィール編集")
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "c-image",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../images/details/fleamarket-editProfile.png */ "./resources/images/details/fleamarket-editProfile.png")
+                          .default,
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [
+                      _vm._v("プロフィール編集")
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "c-image",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../images/details/fleamarket-chat.png */ "./resources/images/details/fleamarket-chat.png")
+                          .default,
+                        alt: ""
+                      }
+                    })
+                  ])
+                ])
+              ]
+            },
+            proxy: true
+          }
+        ])
+      }),
+      _vm._v(" "),
+      _c("detail-content-section", {
+        attrs: { h2: "作成してみて", id: "impression" },
+        scopedSlots: _vm._u([
+          {
+            key: "content",
+            fn: function() {
+              return [
+                _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [
+                    _vm._v("このポートフォリを制作する上で学習したこと")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("p", [
+                      _vm._v(
+                        "\n                  この制作物が私が初めて制作(2020/05)したものであり、学習に多くの時間を費やしましたが、プログラミングについてこの段階で多くのことを学ぶことができました。また、この段階でしっかり学習したことにより、その後の学習する上でのベースができ、プログラミングに対しての理解がより深まりました。\n               "
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [
+                      _vm._v("デバッグの使用")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                  ブレークポイントによるデバッグをここの段階で初めて使用しました。これを使用することにより、「なんとなくコードが動いている」という状態から、「なぜこのように動いているのか」ということを意識できるようになったため、その後のプログラミング学習でも大いに役立っています。\n               "
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [
+                      _vm._v("デザイン（プロトタイプ）の学習")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                  この制作物からプロトタイプ（Adobe\n                  XD）を作成してから、コーディングを実施するようにしました。今まではコーディングしながらデザインを考えていました。そうすると、その日の気分によってベストなデザインがコロコロ変わり、かなり非効率な制作プロセスを歩んでいたことを改善したく、プロトタイプを導入することにしました。\n               "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                  プロトタイプでデザインするにあたり、デザイン4大原則である「近接」「整列」「強弱」「反復」に加え、色に統一感を持たせることを意識しました。\n               "
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "c-h3__wrap" }, [
+                  _c("h3", { staticClass: "c-h3" }, [_vm._v("苦労した点")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "c-h4__wrap" }, [
+                    _c("h4", { staticClass: "c-h4" }, [
+                      _vm._v("ページネーション")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                  ページネーションでは、ページ数によって表示する数字を変動させるのに苦労しました。またそれに加え、カテゴリ別・価格順のクエリパラメーターもURLに追加する場合に不具合が出たため、バグの修正に時間がかかりましたが、デバッグによりコードを１つ１つ確認ししていくことで解決しました。\n               "
+                      )
+                    ])
+                  ])
+                ])
+              ]
+            },
+            proxy: true
+          }
+        ])
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/detailObjectivePage.vue?vue&type=template&id=1750911c&":
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/detailObjectivePage.vue?vue&type=template&id=1750911c& ***!
@@ -975,7 +1248,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "c-h3__image",
+                    staticClass: "c-image",
                     staticStyle: { width: "70%", "margin-bottom": "20px" },
                     attrs: {
                       src: __webpack_require__(/*! ../../images/details/objective-1.png */ "./resources/images/details/objective-1.png")
@@ -985,7 +1258,7 @@ var render = function() {
                   }),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "c-h3__image",
+                    staticClass: "c-image",
                     staticStyle: { width: "70%" },
                     attrs: {
                       src: __webpack_require__(/*! ../../images/details/objective-2.png */ "./resources/images/details/objective-2.png")
@@ -1052,9 +1325,9 @@ var render = function() {
                 _c("div", { staticClass: "c-h3__wrap" }, [
                   _c("h3", { staticClass: "c-h3" }, [_vm._v("プロトタイプ")]),
                   _vm._v(" "),
-                  _c("figure", { staticClass: "c-h3__figure" }, [
+                  _c("figure", { staticClass: "c-figure" }, [
                     _c("img", {
-                      staticClass: "c-h3__image",
+                      staticClass: "c-image",
                       attrs: {
                         src: __webpack_require__(/*! ../../images/details/portfolio-prototype.png */ "./resources/images/details/portfolio-prototype.png")
                           .default,
@@ -1062,9 +1335,11 @@ var render = function() {
                       }
                     }),
                     _vm._v(" "),
-                    _c("figcaption", { staticClass: "c-h3__figcaption" }, [
-                      _vm._v("左:フレームワーク / 右:プロトタイプ")
-                    ])
+                    _c(
+                      "figcaption",
+                      { staticClass: "c-figcaption -bottom_right" },
+                      [_vm._v("左:フレームワーク / 右:プロトタイプ")]
+                    )
                   ]),
                   _vm._v(" "),
                   _c("p", [
@@ -1099,7 +1374,7 @@ var render = function() {
               return [
                 _c("div", { staticClass: "c-h3__wrap" }, [
                   _c("h3", { staticClass: "c-h3" }, [
-                    _vm._v("このポートフォリを作成する上で学習したこと")
+                    _vm._v("このポートフォリを制作する上で学習したこと")
                   ]),
                   _vm._v(" "),
                   _c("h4", { staticClass: "c-h4" }, [
@@ -1195,7 +1470,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "c-h3__image",
+                    staticClass: "c-image",
                     staticStyle: { border: "none" },
                     attrs: {
                       src: __webpack_require__(/*! ../../images/details/sass-all-pages.png */ "./resources/images/details/sass-all-pages.png")
@@ -1269,7 +1544,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "c-h3__image",
+                    staticClass: "c-image",
                     attrs: {
                       src: __webpack_require__(/*! ../../images/details/sns-users.png */ "./resources/images/details/sns-users.png")
                         .default,
@@ -1282,7 +1557,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "c-h3__image",
+                    staticClass: "c-image",
                     attrs: {
                       src: __webpack_require__(/*! ../../images/details/sns-user.png */ "./resources/images/details/sns-user.png").default,
                       alt: ""
@@ -1292,7 +1567,7 @@ var render = function() {
                   _c("h4", { staticClass: "c-h4" }, [_vm._v("投稿一覧画面")]),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "c-h3__image",
+                    staticClass: "c-image",
                     attrs: {
                       src: __webpack_require__(/*! ../../images/details/sns-posts.png */ "./resources/images/details/sns-posts.png")
                         .default,
@@ -1302,8 +1577,14 @@ var render = function() {
                   _vm._v(" "),
                   _c("h4", { staticClass: "c-h4" }, [_vm._v("投稿詳細画面")]),
                   _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "いいねボタンは非同期処理（axios）でデータベースに追加・削除しています。"
+                    )
+                  ]),
+                  _vm._v(" "),
                   _c("img", {
-                    staticClass: "c-h3__image",
+                    staticClass: "c-image",
                     attrs: {
                       src: __webpack_require__(/*! ../../images/details/sns-post.png */ "./resources/images/details/sns-post.png").default,
                       alt: ""
@@ -1344,7 +1625,12 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "detail__titleSec" }, [
     _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "c-h1" }, [_vm._t("title")], 2)
+      _c(
+        "div",
+        { staticClass: "c-h1" },
+        [_vm._t("title"), _vm._v(" "), _vm._t("createDate")],
+        2
+      )
     ])
   ])
 }
@@ -1399,7 +1685,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "c-h3__image",
+                    staticClass: "c-image",
                     staticStyle: { width: "55%" },
                     attrs: {
                       src: __webpack_require__(/*! ../../images/details/todo.png */ "./resources/images/details/todo.png").default,
@@ -1468,7 +1754,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "c-h3__image",
+                    staticClass: "c-image",
                     staticStyle: { border: "none" },
                     attrs: {
                       src: __webpack_require__(/*! ../../images/details/dentist-all-pages.png */ "./resources/images/details/dentist-all-pages.png")
@@ -1848,6 +2134,110 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/images/details/fleamarket-chat.png":
+/*!******************************************************!*\
+  !*** ./resources/images/details/fleamarket-chat.png ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("images/fleamarket-chat.d8698b15e35747a6066961daf8d31c9d.png");
+
+/***/ }),
+
+/***/ "./resources/images/details/fleamarket-detail.png":
+/*!********************************************************!*\
+  !*** ./resources/images/details/fleamarket-detail.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("images/fleamarket-detail.212d524d15f2b56c3862983c779242fd.png");
+
+/***/ }),
+
+/***/ "./resources/images/details/fleamarket-editProfile.png":
+/*!*************************************************************!*\
+  !*** ./resources/images/details/fleamarket-editProfile.png ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("images/fleamarket-editProfile.510eb85f7e665ef6b75caddfd40d7f87.png");
+
+/***/ }),
+
+/***/ "./resources/images/details/fleamarket-history.png":
+/*!*********************************************************!*\
+  !*** ./resources/images/details/fleamarket-history.png ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("images/fleamarket-history.65135b7c3f4d11fa193d36e4dffb81d1.png");
+
+/***/ }),
+
+/***/ "./resources/images/details/fleamarket-index.png":
+/*!*******************************************************!*\
+  !*** ./resources/images/details/fleamarket-index.png ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("images/fleamarket-index.5160c8d888d51f6f50b842fa8cee5909.png");
+
+/***/ }),
+
+/***/ "./resources/images/details/fleamarket-mypage.png":
+/*!********************************************************!*\
+  !*** ./resources/images/details/fleamarket-mypage.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("images/fleamarket-mypage.e9ae8c892654295495eeaa2fbdf767b9.png");
+
+/***/ }),
+
+/***/ "./resources/images/details/fleamarket-registerProduct.png":
+/*!*****************************************************************!*\
+  !*** ./resources/images/details/fleamarket-registerProduct.png ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("images/fleamarket-registerProduct.fedd4f4668d6c4c177a3e847c98b5b7c.png");
+
+/***/ }),
+
+/***/ "./resources/images/details/fleamarket-transition.png":
+/*!************************************************************!*\
+  !*** ./resources/images/details/fleamarket-transition.png ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("images/fleamarket-transition.052106e6d7ef46991e8e135c069478e5.png");
+
+/***/ }),
+
 /***/ "./resources/images/details/objective-1.png":
 /*!**************************************************!*\
   !*** ./resources/images/details/objective-1.png ***!
@@ -1973,6 +2363,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"./fleamarket.png": "./resources/images/home/fleamarket.png",
 	"./objective.png": "./resources/images/home/objective.png",
 	"./portfoliosite.png": "./resources/images/home/portfoliosite.png",
 	"./sass.png": "./resources/images/home/sass.png",
@@ -2000,6 +2391,19 @@ webpackContext.keys = function webpackContextKeys() {
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
 webpackContext.id = "./resources/images/home sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
+/***/ "./resources/images/home/fleamarket.png":
+/*!**********************************************!*\
+  !*** ./resources/images/home/fleamarket.png ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("images/fleamarket.589542ea452cbf707e9fef5a3f913eb1.png");
 
 /***/ }),
 
@@ -2400,6 +2804,7 @@ vue_dist_vue_esm_js__WEBPACK_IMPORTED_MODULE_1__["default"].component('detail-sa
 vue_dist_vue_esm_js__WEBPACK_IMPORTED_MODULE_1__["default"].component('detail-objective-page', __webpack_require__(/*! ./components/detailObjectivePage.vue */ "./resources/js/components/detailObjectivePage.vue").default);
 vue_dist_vue_esm_js__WEBPACK_IMPORTED_MODULE_1__["default"].component('detail-todo-page', __webpack_require__(/*! ./components/detailTodoPage.vue */ "./resources/js/components/detailTodoPage.vue").default);
 vue_dist_vue_esm_js__WEBPACK_IMPORTED_MODULE_1__["default"].component('detail-sns-page', __webpack_require__(/*! ./components/detailSnsPage.vue */ "./resources/js/components/detailSnsPage.vue").default);
+vue_dist_vue_esm_js__WEBPACK_IMPORTED_MODULE_1__["default"].component('detail-fleamarket-page', __webpack_require__(/*! ./components/detailFleamarketPage.vue */ "./resources/js/components/detailFleamarketPage.vue").default);
 new vue_dist_vue_esm_js__WEBPACK_IMPORTED_MODULE_1__["default"]({
   el: '#app'
 });
@@ -2661,6 +3066,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_detailContentSection_vue_vue_type_template_id_4c7c9db0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_detailContentSection_vue_vue_type_template_id_4c7c9db0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/detailFleamarketPage.vue":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/detailFleamarketPage.vue ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _detailFleamarketPage_vue_vue_type_template_id_0823ca6e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./detailFleamarketPage.vue?vue&type=template&id=0823ca6e& */ "./resources/js/components/detailFleamarketPage.vue?vue&type=template&id=0823ca6e&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _detailFleamarketPage_vue_vue_type_template_id_0823ca6e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _detailFleamarketPage_vue_vue_type_template_id_0823ca6e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/detailFleamarketPage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/detailFleamarketPage.vue?vue&type=template&id=0823ca6e&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/components/detailFleamarketPage.vue?vue&type=template&id=0823ca6e& ***!
+  \*****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_detailFleamarketPage_vue_vue_type_template_id_0823ca6e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./detailFleamarketPage.vue?vue&type=template&id=0823ca6e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/detailFleamarketPage.vue?vue&type=template&id=0823ca6e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_detailFleamarketPage_vue_vue_type_template_id_0823ca6e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_detailFleamarketPage_vue_vue_type_template_id_0823ca6e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -26,6 +26,16 @@ export default {
                detail: 'portfolio.html',
                look: '/',
                github: 'https://github.com/hotarika/portfolio'
+            },
+            {
+               title: 'フリマアプリ (PHPによるフルクラッチ)',
+               image: 'fleamarket.png',
+               createDate: '2020/05/19',
+               design: '未対応',
+               learning: ['HTML', 'CSS', 'jQuery', 'PHP (フルスクラッチ)'],
+               detail: 'fleamarket.html',
+               look: '/',
+               github: 'https://github.com/hotarika/fleamarket'
             }
          ]
       };
