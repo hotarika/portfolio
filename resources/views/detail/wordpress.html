@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+   <head>
+      <%= require('html-loader!../common/head.html') %>
+      <title><%= htmlWebpackPlugin.options.title %></title>
+   </head>
+
+   <body class="bg-secondary">
+      <div id="app">
+         <!-- header -->
+         <header-component></header-component>
+
+         <!-- main -->
+         <detail-wp-page></detail-wp-page>
+
+         <!-- header -->
+         <footer-component></footer-component>
+      </div>
+   </body>
+</html>

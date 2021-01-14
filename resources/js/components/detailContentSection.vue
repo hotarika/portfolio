@@ -1,26 +1,19 @@
 <template>
-   <section id="content" class="c-section detail__contentsListsSec">
+   <section :id="id" class="c-section">
       <div class="container">
-         <h1 class="c-h1">内容説明</h1>
-         <template v-for="d of descriptions">
-            <div class="detail__contentsWrap" :key="d.title">
-               <div class="detail__contentWrap">
-                  <div class="detail__contentImage">
-                     <img :src="require('../../images/top-image.jpg').default" alt="" />
-                  </div>
-                  <div class="detail__descriptionWrap">
-                     <h2 class="detail__descriptionHead">{{ d.title }}</h2>
-                     <pre class="detail__descriptionText">{{ d.description }}</pre>
-                  </div>
-               </div>
-            </div>
-         </template>
+         <h2 class="c-h2">{{ h2 }}</h2>
+         <div class="c-h2__contentSec">
+            <slot name="content"></slot>
+         </div>
       </div>
    </section>
 </template>
 
 <script>
 export default {
-   props: { descriptions: Array }
+   props: {
+      h2: String,
+      id: String
+   }
 };
 </script>

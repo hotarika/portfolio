@@ -15,10 +15,17 @@ Vue.component('portfolio-section', require('./components/portfolioSection.vue').
 Vue.component('others-products-section', require('./components/othersProductsSection.vue').default);
 Vue.component('learning-section', require('./components/learningSection.vue').default);
 Vue.component('learning-component', require('./components/learningComponent.vue').default);
-Vue.component('detail-portfolio-page', require('./components/detailPortfolioPage.vue').default);
 Vue.component('detail-title-section', require('./components/detailTitleSection.vue').default);
 Vue.component('detail-content-section', require('./components/detailContentSection.vue').default);
-Vue.component('detail-impression-section', require('./components/detailImpressionSection.vue').default);
+
+// 詳細ページ
+Vue.component('detail-portfolio-page', require('./components/detailPortfolioPage.vue').default);
+Vue.component('detail-wp-page', require('./components/detailWpPage.vue').default);
+Vue.component('detail-sass-page', require('./components/detailSassPage.vue').default);
+Vue.component('detail-objective-page', require('./components/detailObjectivePage.vue').default);
+Vue.component('detail-todo-page', require('./components/detailTodoPage.vue').default);
+Vue.component('detail-sns-page', require('./components/detailSnsPage.vue').default);
+Vue.component('detail-fleamarket-page', require('./components/detailFleamarketPage.vue').default);
 
 new Vue({
    el: '#app'

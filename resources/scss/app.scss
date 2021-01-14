@@ -13,16 +13,68 @@ $primary-light: #efd895;
 // *********************************
 .c-h1 {
    position: relative;
+   padding: 15px;
+   margin-top: 30px;
+   font-size: 17px;
+   font-weight: bold;
+   color: $white;
+   text-align: left;
+   background-color: $primary;
+   border: dashed 2px $white;
+   box-shadow: 0 0 0 5px $primary;
+   &__createDate {
+      position: absolute;
+      right: -2px;
+      bottom: -30px;
+      font-size: 13px;
+      font-weight: normal;
+      color: $black;
+      letter-spacing: 0.7px;
+   }
+   &::after {
+      position: absolute;
+      top: -7px;
+      left: -7px;
+      content: '';
+      border-color: $black $secondary #826056;
+      border-style: solid;
+      border-width: 0 0 25px 25px;
+      box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+   }
+   @include mq('md') {
+      text-align: center;
+   }
+   @include mq('lg') {
+      max-width: 800px;
+      margin: 30px auto 0;
+      font-size: 20px;
+   }
+}
+.c-h2 {
+   position: relative;
    display: inline-block;
-   width: 80%;
+   width: 100%;
+   max-width: 800px;
    padding: 10px;
    margin-bottom: 30px;
    font-size: 17px;
    font-weight: bold;
    color: $white;
    text-align: center;
+   letter-spacing: 1px;
    background-color: $primary;
    border-radius: 25px 5px 5px 25px; /* 左側の角を丸く */
+   &.-other::after {
+      position: absolute;
+      right: -5px;
+      bottom: -17px;
+      font-size: 11px;
+      font-weight: normal;
+      color: $gray-600;
+      letter-spacing: 0;
+      content: 'ここでは学習がメインの制作物を掲載（制作終了の日付順）';
+   }
+
    &::before {
       position: absolute;
       left: 15px;
@@ -30,8 +82,96 @@ $primary-light: #efd895;
       content: '●';
    }
    @include mq('md') {
-      width: 50%;
-      font-size: 19px;
+      font-size: 20px;
+   }
+}
+.c-h2__contentSec {
+   max-width: 800px;
+   padding: 30px 20px;
+   margin: 0 auto;
+   font-size: 14px;
+   text-align: left;
+   letter-spacing: 0.5px;
+   background-color: $white;
+   border: 1px solid $gray-300;
+   border-radius: 5px;
+}
+.c-h3__wrap {
+   margin-bottom: 30px;
+   &:last-child {
+      margin: 0;
+   }
+}
+.c-h3 {
+   padding-bottom: 5px;
+   margin-bottom: 12px;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: left;
+   letter-spacing: 0;
+   border-bottom: 1px solid $gray-200;
+   &::before {
+      content: '● ';
+   }
+}
+.c-h4__wrap {
+   margin-bottom: 30px;
+   & > p {
+      margin-bottom: 5px;
+   }
+   &:last-child {
+      margin: 0;
+   }
+}
+.c-h4 {
+   margin-top: 15px;
+   margin-bottom: 5px;
+   font-size: 15px;
+   font-weight: bold;
+}
+.c-image {
+   display: block;
+   width: 100%;
+   margin: 0 auto;
+   border: 1px solid $gray-200;
+   border-radius: 5px;
+}
+.c-figure {
+   position: relative;
+   margin: 0;
+   margin-bottom: 10px;
+}
+.c-figcaption {
+   position: absolute;
+   padding: 3px 10px;
+   font-size: 11px;
+   color: $white;
+   text-align: right;
+   background-color: $black;
+   opacity: 0.5;
+   &.-bottom_right {
+      right: 0;
+      bottom: 0;
+      border-top-left-radius: 2px;
+      border-bottom-right-radius: 5px;
+   }
+   &.-top_left {
+      top: 0;
+      left: 0;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 2px;
+   }
+}
+.c-demo {
+   margin-left: 30px;
+   & > a {
+      display: inline-block;
+      padding: 5px 20px;
+      margin-bottom: 5px;
+      font-size: 13px;
+      color: $white;
+      background-color: $primary;
+      border-radius: 5px;
    }
 }
 .c-section {
@@ -41,7 +181,7 @@ $primary-light: #efd895;
       margin-top: 70px;
    }
    @include mq('lg') {
-      margin-top: 100px;
+      //
    }
 }
 
@@ -95,6 +235,9 @@ $footer-height: 60px;
    }
    &__link {
       color: $secondary;
+      &:hover {
+         color: $secondary;
+      }
       & > i {
          margin-right: 3px;
          font-size: 15px;
@@ -161,6 +304,7 @@ $footer-height: 60px;
    // -------------------
    &__portfolioSec {
       & > .container {
+         position: relative;
          @include mq('lg') {
             max-width: 800px;
          }
@@ -178,14 +322,16 @@ $footer-height: 60px;
       }
    }
    &__portfolioImage {
+      @include mq('md') {
+         width: 35%;
+      }
       & > img {
          width: 100%;
          height: 150px;
          border-radius: 3px 3px 0 0;
          object-fit: cover;
          @include mq('md') {
-            width: 200px;
-            height: 100%;
+            min-height: 100%;
             border-radius: 3px 0 0 3px;
          }
       }
@@ -210,7 +356,7 @@ $footer-height: 60px;
       }
    }
    &__portfolioInfoArea {
-      //
+      border-left: 1px solid $gray-100;
    }
    &__portfolioInfo {
       padding: 0;
@@ -235,6 +381,7 @@ $footer-height: 60px;
       }
    }
    &__portfolioInfoItem {
+      letter-spacing: 0.7px;
       white-space: nowrap;
       @include mq('md') {
          font-size: 12px;
@@ -499,6 +646,7 @@ $footer-height: 60px;
       margin: 0;
       font-size: 12px;
       text-align: left;
+      letter-spacing: 1px;
       word-break: break-all;
       white-space: pre-wrap;
       border-radius: 0 0 1px 1px;
@@ -512,138 +660,6 @@ $footer-height: 60px;
          @include mq('lg') {
             max-width: 800px;
          }
-      }
-   }
-   &__aboutContent {
-      padding: 15px;
-      font-size: 12px;
-      text-align: left;
-      background-color: $white;
-      border: 1px solid $gray-300;
-      border-radius: 5px;
-   }
-}
-
-// *********************************
-// 制作物詳細
-// *********************************
-.detail {
-   // -------------------
-   // 目次
-   // -------------------
-   &__contentsLists {
-      padding-left: calc(50% - 100px);
-      text-align: left;
-   }
-
-   // -------------------
-   // 内容説明
-   // -------------------
-   &__title {
-      position: relative;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 17px;
-      font-weight: bold;
-      color: $white;
-      text-align: left;
-      background-color: $primary;
-      border: dashed 2px $white;
-      box-shadow: 0 0 0 5px $primary;
-      &::after {
-         position: absolute;
-         top: -7px;
-         left: -7px;
-         content: '';
-         border-color: $black $secondary #826056;
-         border-style: solid;
-         border-width: 0 0 25px 25px;
-         box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
-      }
-      @include mq('md') {
-         text-align: center;
-      }
-      @include mq('lg') {
-         max-width: 800px;
-         margin: 30px auto 0;
-      }
-   }
-   &__contentsListsSec {
-      & > .container {
-         @include mq('lg') {
-            max-width: 800px;
-         }
-      }
-   }
-   &__contentsWrap {
-      // border: 1px solid $gray-300;
-   }
-   &__contentWrap {
-      margin-bottom: 30px;
-      background-color: $white;
-      border: 1px solid $gray-300;
-      @include mq('md') {
-         display: flex;
-         min-height: 140px;
-      }
-   }
-   &__contentImage {
-      @include mq('md') {
-         width: 30%;
-      }
-      & > img {
-         width: 100%;
-         object-fit: cover;
-         height: 200px;
-         @include mq('md') {
-            height: 100%;
-         }
-      }
-   }
-   &__descriptionWrap {
-      width: 100%;
-      min-height: 150px;
-      padding: 15px;
-      text-align: left;
-   }
-   &__descriptionHead {
-      font-size: 16px;
-      font-weight: bold;
-   }
-   &__descriptionText {
-      margin: 0;
-      font-size: 14px;
-      text-align: left;
-      word-break: break-all;
-      white-space: pre-wrap;
-      @include mq('md') {
-         width: 70%;
-      }
-      @include mq('lg') {
-         width: 100%;
-      }
-   }
-
-   // -------------------
-   // 作成してみて
-   // -------------------
-   &__createSec {
-      & > .container {
-         @include mq('lg') {
-            max-width: 800px;
-         }
-      }
-   }
-   &__createText {
-      padding: 15px;
-      font-size: 14px;
-      text-align: left;
-      background-color: $white;
-      border: 1px solid $gray-300;
-      & > h2 {
-         margin: 20px 0 10px;
-         font-size: 16px;
-         font-weight: bold;
       }
    }
 }
