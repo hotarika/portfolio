@@ -381,6 +381,7 @@ $footer-height: 60px;
       }
    }
    &__portfolioInfoItem {
+      letter-spacing: 0.7px;
       white-space: nowrap;
       @include mq('md') {
          font-size: 12px;
