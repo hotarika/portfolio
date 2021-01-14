@@ -13,8 +13,8 @@ module.exports = {
    },
    output: {
       path: path.resolve(__dirname, 'public'), // 出力先のパス
-      filename: './portfolio/js/[name].js', // 出力するファイル名
-      chunkFilename: './portfolio/js/[name].js' // splitChunksのファイル名
+      filename: './detail/js/[name].js', // 出力するファイル名
+      chunkFilename: './detail/js/[name].js' // splitChunksのファイル名
    },
    optimization: {
       splitChunks: {
@@ -89,8 +89,8 @@ module.exports = {
                   loader: 'file-loader', // 画像の出力
                   options: {
                      name: '[name].[contenthash].[ext]',
-                     outputPath: './portfolio/images', // 画像の出力先
-                     publicPath: '/portfolio/images' // 出力されるファイル（CSSなど）に指定される画像のパス
+                     outputPath: './detail/images', // 画像の出力先
+                     publicPath: '/detail/images' // 出力されるファイル（CSSなど）に指定される画像のパス
                   }
                },
                'image-webpack-loader' // 画像の圧縮
@@ -109,7 +109,7 @@ module.exports = {
       }),
       // バンドルされるCSSを別のCSSファイルに抽出
       new MiniCssExtractPlugin({
-         filename: './portfolio/css/[name].css'
+         filename: './detail/css/[name].css'
       }),
       // html設定
       new HtmlWebpackPlugin({
@@ -120,43 +120,43 @@ module.exports = {
       }),
       new HtmlWebpackPlugin({
          title: 'ポートフォリオ詳細 | portfolio',
-         filename: './portfolio/portfolio.html',
+         filename: './detail/portfolio.html',
          template: './resources/views/detail/portfolio.html',
          chunks: ['app']
       }),
       new HtmlWebpackPlugin({
          title: 'WordPress詳細 | portfolio',
-         filename: './portfolio/wordpress.html',
+         filename: './detail/wordpress.html',
          template: './resources/views/detail/wordpress.html',
          chunks: ['app']
       }),
       new HtmlWebpackPlugin({
          title: 'Sass詳細 | portfolio',
-         filename: './portfolio/sass.html',
+         filename: './detail/sass.html',
          template: './resources/views/detail/sass.html',
          chunks: ['app']
       }),
       new HtmlWebpackPlugin({
          title: 'オブジェクト指向詳細 | portfolio',
-         filename: './portfolio/objective.html',
+         filename: './detail/objective.html',
          template: './resources/views/detail/objective.html',
          chunks: ['app']
       }),
       new HtmlWebpackPlugin({
          title: 'Todo詳細 | portfolio',
-         filename: './portfolio/todo.html',
+         filename: './detail/todo.html',
          template: './resources/views/detail/todo.html',
          chunks: ['app']
       }),
       new HtmlWebpackPlugin({
          title: 'SNS詳細 | portfolio',
-         filename: './portfolio/sns.html',
+         filename: './detail/sns.html',
          template: './resources/views/detail/sns.html',
          chunks: ['app']
       }),
       new HtmlWebpackPlugin({
          title: 'Flea Market詳細 | portfolio',
-         filename: './portfolio/fleamarket.html',
+         filename: './detail/fleamarket.html',
          template: './resources/views/detail/fleamarket.html',
          chunks: ['app']
       })
