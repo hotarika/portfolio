@@ -90,7 +90,7 @@ module.exports = {
                   options: {
                      name: '[name].[contenthash].[ext]',
                      outputPath: './portfolio/images', // 画像の出力先
-                     publicPath: 'portfolio/images' // 出力されるファイル（CSSなど）に指定される画像のパス
+                     publicPath: '/portfolio/images' // 出力されるファイル（CSSなど）に指定される画像のパス
                   }
                },
                'image-webpack-loader' // 画像の圧縮
