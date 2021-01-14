@@ -7,8 +7,8 @@
       "design": "未対応",
       "learning": ["HTML", "CSS", "jQuery", "PHP (フルスクラッチ)"],
       "detail": "fleamarket.html",
-      "look": "/fleamarket",
-      "github": "https://github.com/hotarika/fleamarket",
+      "look": "https://created-portfolio.com/fleamarket",
+      "github": "https://github.com/hotarika/01_fleamarket",
       "section": "portfolio"
    },
    {
@@ -19,8 +19,8 @@
       "design": "未対応",
       "learning": ["HTML", "CSS", "PHP"],
       "detail": "objective.html",
-      "look": "/objective",
-      "github": "https://github.com/hotarika/objective",
+      "look": "https://created-portfolio.com//objective",
+      "github": "https://github.com/hotarika/02_objective",
       "section": "other"
    },
    {
@@ -31,8 +31,8 @@
       "design": "未対応",
       "learning": ["HTML", "CSS", "WordPress"],
       "detail": "wordpress.html",
-      "look": "/dentist",
-      "github": "https://github.com/hotarika/dentist",
+      "look": "https://created-portfolio.com//dentist",
+      "github": "https://github.com/hotarika/03_dentist",
       "section": "other"
    },
    {
@@ -43,8 +43,8 @@
       "design": "あり",
       "learning": ["HTML", "SCSS"],
       "detail": "sass.html",
-      "look": "/sass",
-      "github": "https://github.com/hotarika/sass",
+      "look": "https://created-portfolio.com//sass",
+      "github": "https://github.com/hotarika/04_sass",
       "section": "other"
    },
    {
@@ -55,8 +55,8 @@
       "design": "未対応",
       "learning": ["Vue.js(非同期処理含む)", "Laravel"],
       "detail": "sns.html",
-      "look": "/sns",
-      "github": "https://github.com/hotarika/sns",
+      "look": "https://created-portfolio.com//sns",
+      "github": "https://github.com/hotarika/05_sns",
       "section": "other"
    },
    {
@@ -67,8 +67,8 @@
       "design": "未対応",
       "learning": ["Vue.js(非同期処理含む)", "Laravel"],
       "detail": "todo.html",
-      "look": "/sass",
-      "github": "https://github.com/hotarika/sass",
+      "look": "https://created-portfolio.com/todo",
+      "github": "https://github.com/hotarika/06_todo",
       "section": "other"
    },
    {
@@ -79,8 +79,8 @@
       "design": "レスポンシブ対応",
       "learning": ["HTML", "SCSS", "Bootstrap (一部機能)", "Vue.js (コンポーネント化)", "webpack"],
       "detail": "portfolio.html",
-      "look": "/",
-      "github": "https://github.com/hotarika/portfolio",
+      "look": "https://created-portfolio.com/",
+      "github": "https://github.com/hotarika/07_portfolio",
       "section": "portfolio"
    }
 ]

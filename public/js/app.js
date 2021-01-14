@@ -3855,15 +3855,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!**********************************************************!*\
   !*** ./resources/js/components/detailFleamarketPage.vue ***!
   \**********************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _detailFleamarketPage_vue_vue_type_template_id_0823ca6e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./detailFleamarketPage.vue?vue&type=template&id=0823ca6e& */ "./resources/js/components/detailFleamarketPage.vue?vue&type=template&id=0823ca6e&");
 /* harmony import */ var _detailFleamarketPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./detailFleamarketPage.vue?vue&type=script&lang=js& */ "./resources/js/components/detailFleamarketPage.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _detailFleamarketPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _detailFleamarketPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -3893,7 +3892,7 @@ component.options.__file = "resources/js/components/detailFleamarketPage.vue"
 /*!***********************************************************************************!*\
   !*** ./resources/js/components/detailFleamarketPage.vue?vue&type=script&lang=js& ***!
   \***********************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4751,7 +4750,7 @@ module.exports = JSON.parse("[{\"name\":\"HTML\",\"iconName\":\"html.svg\",\"css
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"id\":1,\"title\":\"フリマアプリ (PHPによるフルクラッチ)\",\"image\":\"fleamarket.png\",\"createDate\":\"2020/05/19\",\"design\":\"未対応\",\"learning\":[\"HTML\",\"CSS\",\"jQuery\",\"PHP (フルスクラッチ)\"],\"detail\":\"fleamarket.html\",\"look\":\"/fleamarket\",\"github\":\"https://github.com/hotarika/fleamarket\",\"section\":\"portfolio\"},{\"id\":2,\"title\":\"オブジェクト指向の学習\",\"image\":\"objective.png\",\"createDate\":\"2021/05/25\",\"design\":\"未対応\",\"learning\":[\"HTML\",\"CSS\",\"PHP\"],\"detail\":\"objective.html\",\"look\":\"/objective\",\"github\":\"https://github.com/hotarika/objective\",\"section\":\"other\"},{\"id\":3,\"title\":\"WordPressの学習（歯医者HP）\",\"image\":\"wordpress.png\",\"createDate\":\"2020/06/05\",\"design\":\"未対応\",\"learning\":[\"HTML\",\"CSS\",\"WordPress\"],\"detail\":\"wordpress.html\",\"look\":\"/dentist\",\"github\":\"https://github.com/hotarika/dentist\",\"section\":\"other\"},{\"id\":4,\"title\":\"Sass(SCSS)・レスポンシブの学習\",\"image\":\"sass.png\",\"createDate\":\"2020/06/29\",\"design\":\"あり\",\"learning\":[\"HTML\",\"SCSS\"],\"detail\":\"sass.html\",\"look\":\"/sass\",\"github\":\"https://github.com/hotarika/sass\",\"section\":\"other\"},{\"id\":5,\"title\":\"簡易SNSアプリ\",\"image\":\"sns.png\",\"createDate\":\"2020/09/15\",\"design\":\"未対応\",\"learning\":[\"Vue.js(非同期処理含む)\",\"Laravel\"],\"detail\":\"sns.html\",\"look\":\"/sns\",\"github\":\"https://github.com/hotarika/sns\",\"section\":\"other\"},{\"id\":6,\"title\":\"TODOアプリの制作\",\"image\":\"todo.png\",\"createDate\":\"2020/10/09\",\"design\":\"未対応\",\"learning\":[\"Vue.js(非同期処理含む)\",\"Laravel\"],\"detail\":\"todo.html\",\"look\":\"/sass\",\"github\":\"https://github.com/hotarika/sass\",\"section\":\"other\"},{\"id\":7,\"title\":\"ポートフォリオのまとめサイト\",\"image\":\"portfoliosite.png\",\"createDate\":\"2021/01/04\",\"design\":\"レスポンシブ対応\",\"learning\":[\"HTML\",\"SCSS\",\"Bootstrap (一部機能)\",\"Vue.js (コンポーネント化)\",\"webpack\"],\"detail\":\"portfolio.html\",\"look\":\"/\",\"github\":\"https://github.com/hotarika/portfolio\",\"section\":\"portfolio\"}]");
+module.exports = JSON.parse("[{\"id\":1,\"title\":\"フリマアプリ (PHPによるフルクラッチ)\",\"image\":\"fleamarket.png\",\"createDate\":\"2020/05/19\",\"design\":\"未対応\",\"learning\":[\"HTML\",\"CSS\",\"jQuery\",\"PHP (フルスクラッチ)\"],\"detail\":\"fleamarket.html\",\"look\":\"https://created-portfolio.com/fleamarket\",\"github\":\"https://github.com/hotarika/01_fleamarket\",\"section\":\"portfolio\"},{\"id\":2,\"title\":\"オブジェクト指向の学習\",\"image\":\"objective.png\",\"createDate\":\"2021/05/25\",\"design\":\"未対応\",\"learning\":[\"HTML\",\"CSS\",\"PHP\"],\"detail\":\"objective.html\",\"look\":\"https://created-portfolio.com//objective\",\"github\":\"https://github.com/hotarika/02_objective\",\"section\":\"other\"},{\"id\":3,\"title\":\"WordPressの学習（歯医者HP）\",\"image\":\"wordpress.png\",\"createDate\":\"2020/06/05\",\"design\":\"未対応\",\"learning\":[\"HTML\",\"CSS\",\"WordPress\"],\"detail\":\"wordpress.html\",\"look\":\"https://created-portfolio.com//dentist\",\"github\":\"https://github.com/hotarika/03_dentist\",\"section\":\"other\"},{\"id\":4,\"title\":\"Sass(SCSS)・レスポンシブの学習\",\"image\":\"sass.png\",\"createDate\":\"2020/06/29\",\"design\":\"あり\",\"learning\":[\"HTML\",\"SCSS\"],\"detail\":\"sass.html\",\"look\":\"https://created-portfolio.com//sass\",\"github\":\"https://github.com/hotarika/04_sass\",\"section\":\"other\"},{\"id\":5,\"title\":\"簡易SNSアプリ\",\"image\":\"sns.png\",\"createDate\":\"2020/09/15\",\"design\":\"未対応\",\"learning\":[\"Vue.js(非同期処理含む)\",\"Laravel\"],\"detail\":\"sns.html\",\"look\":\"https://created-portfolio.com//sns\",\"github\":\"https://github.com/hotarika/05_sns\",\"section\":\"other\"},{\"id\":6,\"title\":\"TODOアプリの制作\",\"image\":\"todo.png\",\"createDate\":\"2020/10/09\",\"design\":\"未対応\",\"learning\":[\"Vue.js(非同期処理含む)\",\"Laravel\"],\"detail\":\"todo.html\",\"look\":\"https://created-portfolio.com/todo\",\"github\":\"https://github.com/hotarika/06_todo\",\"section\":\"other\"},{\"id\":7,\"title\":\"ポートフォリオのまとめサイト\",\"image\":\"portfoliosite.png\",\"createDate\":\"2021/01/04\",\"design\":\"レスポンシブ対応\",\"learning\":[\"HTML\",\"SCSS\",\"Bootstrap (一部機能)\",\"Vue.js (コンポーネント化)\",\"webpack\"],\"detail\":\"portfolio.html\",\"look\":\"https://created-portfolio.com/\",\"github\":\"https://github.com/hotarika/07_portfolio\",\"section\":\"portfolio\"}]");
 
 /***/ }),
 
