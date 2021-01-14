@@ -6,7 +6,7 @@
       "createDate": "2020/05/19",
       "design": "未対応",
       "learning": ["HTML", "CSS", "jQuery", "PHP (フルスクラッチ)"],
-      "detail": "fleamarket.html",
+      "detail": "https://created-portfolio.com/https://created-portfolio.com/fleamarket.html",
       "look": "https://created-portfolio.com/fleamarket",
       "github": "https://github.com/hotarika/01_fleamarket",
       "section": "portfolio"
@@ -18,8 +18,8 @@
       "createDate": "2021/05/25",
       "design": "未対応",
       "learning": ["HTML", "CSS", "PHP"],
-      "detail": "objective.html",
-      "look": "https://created-portfolio.com//objective",
+      "detail": "https://created-portfolio.com/objective.html",
+      "look": "https://created-portfolio.com/objective",
       "github": "https://github.com/hotarika/02_objective",
       "section": "other"
    },
@@ -30,8 +30,8 @@
       "createDate": "2020/06/05",
       "design": "未対応",
       "learning": ["HTML", "CSS", "WordPress"],
-      "detail": "wordpress.html",
-      "look": "https://created-portfolio.com//dentist",
+      "detail": "https://created-portfolio.com/wordpress.html",
+      "look": "https://created-portfolio.com/dentist",
       "github": "https://github.com/hotarika/03_dentist",
       "section": "other"
    },
@@ -42,8 +42,8 @@
       "createDate": "2020/06/29",
       "design": "あり",
       "learning": ["HTML", "SCSS"],
-      "detail": "sass.html",
-      "look": "https://created-portfolio.com//sass",
+      "detail": "https://created-portfolio.com/sass.html",
+      "look": "https://created-portfolio.com/sass",
       "github": "https://github.com/hotarika/04_sass",
       "section": "other"
    },
@@ -54,8 +54,8 @@
       "createDate": "2020/09/15",
       "design": "未対応",
       "learning": ["Vue.js(非同期処理含む)", "Laravel"],
-      "detail": "sns.html",
-      "look": "https://created-portfolio.com//sns",
+      "detail": "https://created-portfolio.com/sns.html",
+      "look": "https://created-portfolio.com/sns",
       "github": "https://github.com/hotarika/05_sns",
       "section": "other"
    },
@@ -66,7 +66,7 @@
       "createDate": "2020/10/09",
       "design": "未対応",
       "learning": ["Vue.js(非同期処理含む)", "Laravel"],
-      "detail": "todo.html",
+      "detail": "https://created-portfolio.com/todo.html",
       "look": "https://created-portfolio.com/todo",
       "github": "https://github.com/hotarika/06_todo",
       "section": "other"
@@ -78,7 +78,7 @@
       "createDate": "2021/01/04",
       "design": "レスポンシブ対応",
       "learning": ["HTML", "SCSS", "Bootstrap (一部機能)", "Vue.js (コンポーネント化)", "webpack"],
-      "detail": "portfolio.html",
+      "detail": "https://created-portfolio.com/portfolio.html",
       "look": "https://created-portfolio.com/",
       "github": "https://github.com/hotarika/07_portfolio",
       "section": "portfolio"
