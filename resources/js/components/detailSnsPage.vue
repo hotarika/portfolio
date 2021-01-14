@@ -14,7 +14,7 @@
             <div class="c-h3__wrap">
                <h3 class="c-h3">デモページ</h3>
                <div class="c-demo">
-                  <a href="">デモページはこちら</a>
+                  <a :href="datum.look">デモページはこちら</a>
                   <div>メールアドレス：test1@example.com</div>
                   <div>パスワード：rootroot</div>
                </div>
