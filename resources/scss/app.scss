@@ -290,7 +290,7 @@ $footer-height: 60px;
    }
    &__wave {
       position: absolute;
-      bottom: 0;
+      bottom: -2px;
       display: none;
       width: 100%;
       overflow: hidden;
