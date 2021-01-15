@@ -18,7 +18,7 @@ $primary-light: #efd895;
    font-size: 17px;
    font-weight: bold;
    color: $white;
-   text-align: left;
+   text-align: center;
    background-color: $primary;
    border: dashed 2px $white;
    box-shadow: 0 0 0 5px $primary;
@@ -41,13 +41,13 @@ $primary-light: #efd895;
       border-width: 0 0 25px 25px;
       box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
    }
-   @include mq('md') {
-      text-align: center;
-   }
+   // @include mq('md') {
+   //    text-align: center;
+   // }
    @include mq('lg') {
       max-width: 800px;
       margin: 30px auto 0;
-      font-size: 20px;
+      font-size: 25px;
    }
 }
 .c-h2 {
@@ -68,11 +68,14 @@ $primary-light: #efd895;
       position: absolute;
       right: -5px;
       bottom: -17px;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: normal;
       color: $gray-600;
       letter-spacing: 0;
       content: 'ここでは学習がメインの制作物を掲載（制作終了の日付順）';
+      @include mq('md') {
+         font-size: 11px;
+      }
    }
 
    &::before {
@@ -87,7 +90,7 @@ $primary-light: #efd895;
 }
 .c-h2__contentSec {
    max-width: 800px;
-   padding: 30px 20px;
+   padding: 25px 15px;
    margin: 0 auto;
    font-size: 14px;
    text-align: left;
@@ -95,6 +98,9 @@ $primary-light: #efd895;
    background-color: $white;
    border: 1px solid $gray-300;
    border-radius: 5px;
+   @include mq('md') {
+      padding: 30px 20px;
+   }
 }
 .c-h3__wrap {
    margin-bottom: 30px;
@@ -144,11 +150,14 @@ $primary-light: #efd895;
 .c-figcaption {
    position: absolute;
    padding: 3px 10px;
-   font-size: 11px;
+   font-size: 10px;
    color: $white;
    text-align: right;
    background-color: $black;
    opacity: 0.5;
+   @include mq('md') {
+      font-size: 11px;
+   }
    &.-bottom_right {
       right: 0;
       bottom: 0;
@@ -163,7 +172,9 @@ $primary-light: #efd895;
    }
 }
 .c-demo {
-   margin-left: 30px;
+   @include mq('md') {
+      margin-left: 20px;
+   }
    & > a {
       display: inline-block;
       padding: 5px 20px;
@@ -177,8 +188,16 @@ $primary-light: #efd895;
 .c-section {
    margin-top: 50px;
    text-align: center;
+   & > .container {
+      padding-right: 10px;
+      padding-left: 10px;
+   }
    @include mq('xl') {
       margin-top: 70px;
+   }
+   @include mq('md') {
+      padding-right: 15px;
+      padding-left: 15px;
    }
    @include mq('lg') {
       //
@@ -442,6 +461,7 @@ $footer-height: 60px;
       white-space: nowrap;
       background-color: $white;
       border-radius: 0 0 5px 5px;
+
       @include mq('md') {
          font-size: 12px;
          border-bottom-right-radius: 5px;
@@ -461,8 +481,12 @@ $footer-height: 60px;
          width: 28%;
       }
       & > i {
+         display: none;
          margin-right: 3px;
          font-size: 12px;
+         @include mq('2xs') {
+            display: inline;
+         }
          @include mq('md') {
             font-size: 13px;
          }
