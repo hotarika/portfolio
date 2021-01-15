@@ -25,7 +25,7 @@
             </div>
             <div class="home__portfolioLinks">
                <a class="home__portfolioLink" :href="`/detail/${datum.detail}`"
-                  ><i class="fas fa-book"></i>制作物の説明</a
+                  ><i class="fas fa-book"></i>制作物の詳細</a
                >
                <a class="home__portfolioLink" :href="datum.look"><i class="far fa-eye"></i>作品を見る</a>
                <a class="home__portfolioLink" :href="datum.github"><i class="fab fa-github"></i>GitHub</a>
