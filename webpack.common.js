@@ -117,48 +117,6 @@ module.exports = {
          filename: 'index.html',
          template: './resources/views/index.html',
          chunks: ['app']
-      }),
-      new HtmlWebpackPlugin({
-         title: 'ポートフォリオ詳細 | portfolio',
-         filename: './detail/portfolio.html',
-         template: './resources/views/detail/portfolio.html',
-         chunks: ['app']
-      }),
-      new HtmlWebpackPlugin({
-         title: 'WordPress詳細 | portfolio',
-         filename: './detail/wordpress.html',
-         template: './resources/views/detail/wordpress.html',
-         chunks: ['app']
-      }),
-      new HtmlWebpackPlugin({
-         title: 'Sass詳細 | portfolio',
-         filename: './detail/sass.html',
-         template: './resources/views/detail/sass.html',
-         chunks: ['app']
-      }),
-      new HtmlWebpackPlugin({
-         title: 'オブジェクト指向詳細 | portfolio',
-         filename: './detail/objective.html',
-         template: './resources/views/detail/objective.html',
-         chunks: ['app']
-      }),
-      new HtmlWebpackPlugin({
-         title: 'Todo詳細 | portfolio',
-         filename: './detail/todo.html',
-         template: './resources/views/detail/todo.html',
-         chunks: ['app']
-      }),
-      new HtmlWebpackPlugin({
-         title: 'SNS詳細 | portfolio',
-         filename: './detail/sns.html',
-         template: './resources/views/detail/sns.html',
-         chunks: ['app']
-      }),
-      new HtmlWebpackPlugin({
-         title: 'Flea Market詳細 | portfolio',
-         filename: './detail/fleamarket.html',
-         template: './resources/views/detail/fleamarket.html',
-         chunks: ['app']
       })
    ],
    resolve: {
