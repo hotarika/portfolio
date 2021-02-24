@@ -696,17 +696,6 @@ $footer-height: 60px;
       white-space: pre-wrap;
       border-radius: 0 0 1px 1px;
    }
-
-   // -------------------
-   // 私について
-   // -------------------
-   &__aboutSec {
-      & > .container {
-         @include mq('lg') {
-            max-width: 800px;
-         }
-      }
-   }
 }
 
 // *********************************
