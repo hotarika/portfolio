@@ -17,10 +17,6 @@
          <div class="home__learningDescriptionWrap">
             <div class="home__learningDetailSec -level">
                <h3>現在のレベル</h3>
-               <!-- "その他"セクションのテンプレート -->
-               <pre
-                  class="home__learningText -level"
-                  v-if="learning.currentLevel_other">{{ learning.currentLevel_other }}<a href="">詳細はコチラ</a></pre>
                <!-- 一般のテンプレート -->
                <pre class="home__learningText -level" v-if="learning.currentLevel">{{ learning.currentLevel }}</pre>
             </div>
