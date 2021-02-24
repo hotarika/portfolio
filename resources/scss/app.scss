@@ -330,6 +330,7 @@ $footer-height: 60px;
       }
    }
    &__portfolioItem {
+      position: relative;
       margin-bottom: 20px;
       border: 1px solid $gray-300;
       border-radius: 5px;
@@ -339,6 +340,26 @@ $footer-height: 60px;
       @include mq('lg') {
          margin-bottom: 30px;
       }
+      &.is-new {
+         border: 3px solid #ff8787;
+      }
+   }
+   &__portfolioNew {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      font-size: 14px;
+      font-weight: bold;
+      color: $white;
+      letter-spacing: 0.5px;
+      background-color: #ce2222;
+      border-radius: 50%;
+      transform: rotate(15deg);
    }
    &__portfolioImage {
       @include mq('md') {

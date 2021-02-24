@@ -1,5 +1,6 @@
 <template>
-   <div class="home__portfolioItem">
+   <div class="home__portfolioItem" :class="{ 'is-new': datum.new === true }">
+      <div class="home__portfolioNew" v-if="datum.new === true">NEW</div>
       <div class="home__portfolioImage">
          <img :src="imgUrl" alt="" />
       </div>
