@@ -25,11 +25,15 @@
                </div>
             </div>
             <div class="home__portfolioLinks">
-               <a class="home__portfolioLink" :href="`/detail/${datum.detail}`"
+               <a class="home__portfolioLink" :href="datum.detail" target="_blank" rel="noopener noreferrer"
                   ><i class="fas fa-book"></i>制作物の詳細</a
                >
-               <a class="home__portfolioLink" :href="datum.look"><i class="far fa-eye"></i>作品を見る</a>
-               <a class="home__portfolioLink" :href="datum.github"><i class="fab fa-github"></i>GitHub</a>
+               <a class="home__portfolioLink" :href="datum.look" target="_blank" rel="noopener noreferrer"
+                  ><i class="far fa-eye"></i>作品を見る</a
+               >
+               <a class="home__portfolioLink" :href="datum.github" target="_blank" rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i>GitHub</a
+               >
             </div>
          </div>
       </div>
