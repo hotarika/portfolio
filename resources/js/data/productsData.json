@@ -6,22 +6,24 @@
       "createDate": "2020/05/19",
       "design": "未対応",
       "learning": ["HTML", "CSS", "jQuery", "PHP (フルスクラッチ)"],
-      "detail": "fleamarket.html",
+      "detail": "https://qiita.com/mugicha_88361/private/d58e5e6e18c428c26e20",
       "look": "https://created-portfolio.com/fleamarket",
       "github": "https://github.com/hotarika/01_fleamarket",
-      "section": "portfolio"
+      "section": "portfolio",
+      "new": false
    },
    {
       "id": 2,
       "title": "オブジェクト指向の学習",
       "image": "objective.png",
-      "createDate": "2021/05/25",
+      "createDate": "2020/05/25",
       "design": "未対応",
       "learning": ["HTML", "CSS", "PHP"],
-      "detail": "objective.html",
+      "detail": "https://github.com/hotarika/objective#readme",
       "look": "https://created-portfolio.com/objective",
-      "github": "https://github.com/hotarika/02_objective",
-      "section": "other"
+      "github": "https://github.com/hotarika/objective",
+      "section": "other",
+      "new": false
    },
    {
       "id": 3,
@@ -30,10 +32,11 @@
       "createDate": "2020/06/05",
       "design": "未対応",
       "learning": ["HTML", "CSS", "WordPress"],
-      "detail": "wordpress.html",
+      "detail": "https://github.com/hotarika/wordpress#readme",
       "look": "https://created-portfolio.com/dentist",
-      "github": "https://github.com/hotarika/03_dentist",
-      "section": "other"
+      "github": "https://github.com/hotarika/wordpress",
+      "section": "other",
+      "new": false
    },
    {
       "id": 4,
@@ -42,10 +45,11 @@
       "createDate": "2020/06/29",
       "design": "あり",
       "learning": ["HTML", "SCSS"],
-      "detail": "sass.html",
+      "detail": "https://github.com/hotarika/sass#readme",
       "look": "https://created-portfolio.com/sass",
-      "github": "https://github.com/hotarika/04_sass",
-      "section": "other"
+      "github": "https://github.com/hotarika/sass",
+      "section": "other",
+      "new": false
    },
    {
       "id": 5,
@@ -54,10 +58,11 @@
       "createDate": "2020/09/15",
       "design": "未対応",
       "learning": ["Vue.js(非同期処理含む)", "Laravel"],
-      "detail": "sns.html",
+      "detail": "https://github.com/hotarika/sns#readme",
       "look": "https://created-portfolio.com/sns",
-      "github": "https://github.com/hotarika/05_sns",
-      "section": "other"
+      "github": "https://github.com/hotarika/sns",
+      "section": "other",
+      "new": false
    },
    {
       "id": 6,
@@ -66,10 +71,11 @@
       "createDate": "2020/10/09",
       "design": "未対応",
       "learning": ["Vue.js(非同期処理含む)", "Laravel"],
-      "detail": "todo.html",
+      "detail": "https://github.com/hotarika/todo#readme",
       "look": "https://created-portfolio.com/todo",
-      "github": "https://github.com/hotarika/06_todo",
-      "section": "other"
+      "github": "https://github.com/hotarika/todo",
+      "section": "other",
+      "new": false
    },
    {
       "id": 7,
@@ -78,9 +84,23 @@
       "createDate": "2021/01/04",
       "design": "レスポンシブ対応",
       "learning": ["HTML", "SCSS", "Bootstrap (一部機能)", "Vue.js (コンポーネント化)", "webpack"],
-      "detail": "portfolio.html",
+      "detail": "https://github.com/hotarika/portfolio#readme",
       "look": "https://created-portfolio.com/",
-      "github": "https://github.com/hotarika/07_portfolio",
-      "section": "portfolio"
+      "github": "https://github.com/hotarika/portfolio",
+      "section": "other",
+      "new": false
+   },
+   {
+      "id": 8,
+      "title": "書籍管理アプリ（HONDANA）",
+      "image": "hondana.png",
+      "createDate": "2021/01/30",
+      "design": "レスポンシブ対応",
+      "learning": ["HTML", "SCSS", "Bootstrap (一部機能)", "JavaScript", "Vue.js", "Laravel"],
+      "detail": "https://qiita.com/mugicha_88361/private/535edf69a201692fb8e2",
+      "look": "https://created-portfolio.com/hondana/",
+      "github": "https://github.com/hotarika/hondana",
+      "section": "portfolio",
+      "new": true
    }
 ]
