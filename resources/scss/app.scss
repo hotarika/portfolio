@@ -331,11 +331,12 @@ $footer-height: 60px;
    }
    &__portfolioItem {
       position: relative;
-      margin-bottom: 20px;
-      border: 1px solid $gray-300;
+      margin-bottom: 25px;
+      border: 1px solid #a29490;
       border-radius: 5px;
       @include mq('md') {
          display: flex;
+         border: 1px solid $gray-300;
       }
       @include mq('lg') {
          margin-bottom: 30px;
@@ -368,11 +369,11 @@ $footer-height: 60px;
       & > img {
          width: 100%;
          height: 150px;
-         border-radius: 3px 3px 0 0;
+         border-radius: 4px 4px 0 0;
          object-fit: cover;
          @include mq('md') {
             min-height: 100%;
-            border-radius: 3px 0 0 3px;
+            border-radius: 4px 0 0 4px;
          }
       }
    }
@@ -397,6 +398,7 @@ $footer-height: 60px;
    }
    &__portfolioInfoArea {
       border-left: 1px solid $gray-100;
+      border-radius: 0 0 5px 5px;
    }
    &__portfolioInfo {
       padding: 0;
@@ -531,11 +533,12 @@ $footer-height: 60px;
       }
    }
    &__learningItem {
-      margin-bottom: 20px;
-      border: 1px solid $gray-300;
+      margin-bottom: 25px;
+      border: 1px solid #a29490;
       border-radius: 5px;
       @include mq('md') {
          margin-bottom: 30px;
+         border: 1px solid $gray-300;
       }
       & > h2 {
          padding: 10px 0;
