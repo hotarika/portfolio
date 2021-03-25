@@ -560,19 +560,24 @@ html {
       position: absolute;
       top: 0;
       right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 10px;
-      text-align: center;
       @include mq('md') {
          padding: 10px 20px;
       }
    }
    &__logoLink {
-      margin-right: 2px;
+      margin-right: 8px;
       &.-twitter {
-         display: inline-block;
+         display: flex;
+         align-items: center;
+         justify-content: center;
          width: 85px;
-         padding: 4px 0;
+         height: 32.14px; // Qiitaロゴに合わせて調整
          color: $white;
+         text-decoration: none;
          white-space: nowrap;
          background-color: #00acee;
          border-radius: 3px;
@@ -581,13 +586,12 @@ html {
          }
          @include mq('md') {
             width: 100px;
-            padding: 6.5px 0;
+            height: 37.8px; // Qiitaロゴに合わせて調整
          }
       }
       &.-qiita {
          & > img {
             width: 85px;
-            margin-top: -3.5px;
             border-radius: 3px;
             @include mq('md') {
                width: 100px;
