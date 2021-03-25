@@ -267,6 +267,27 @@ $footer-height: 60px;
 }
 
 // *********************************
+// footer
+// *********************************
+html {
+   // min-height: 100%;
+}
+.footer {
+   margin-top: 70px;
+   background-color: $primary;
+   background-color: #3a0606;
+   &__imageWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: $footer-height;
+      & > img {
+         width: 110px;
+      }
+   }
+}
+
+// *********************************
 // home
 // *********************************
 .home {
@@ -523,6 +544,59 @@ $footer-height: 60px;
    }
 
    // -------------------
+   // SNSロゴ
+   // -------------------
+   &__snsWrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      & > .container {
+         position: relative;
+      }
+   }
+   &__snsLogoWrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      text-align: center;
+      @include mq('md') {
+         padding: 10px 20px;
+      }
+   }
+   &__logoLink {
+      margin-right: 2px;
+      &.-twitter {
+         display: inline-block;
+         width: 85px;
+         padding: 4px 0;
+         color: $white;
+         white-space: nowrap;
+         background-color: #00acee;
+         border-radius: 3px;
+         & > i {
+            margin-right: 2px;
+         }
+         @include mq('md') {
+            width: 100px;
+            padding: 6.5px 0;
+         }
+      }
+      &.-qiita {
+         & > img {
+            width: 85px;
+            margin-top: -3.5px;
+            border-radius: 3px;
+            @include mq('md') {
+               width: 100px;
+            }
+         }
+      }
+   }
+
+   // -------------------
    // 学習内容・スキル
    // -------------------
    &__learningSec {
@@ -698,26 +772,5 @@ $footer-height: 60px;
       word-break: break-all;
       white-space: pre-wrap;
       border-radius: 0 0 1px 1px;
-   }
-}
-
-// *********************************
-// footer
-// *********************************
-html {
-   // min-height: 100%;
-}
-.footer {
-   margin-top: 70px;
-   background-color: $primary;
-   background-color: #3a0606;
-   &__imageWrap {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: $footer-height;
-      & > img {
-         width: 110px;
-      }
    }
 }
