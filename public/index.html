@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
    <head>
-      <%= require('html-loader!./common/head.html') %>
-      <title><%= htmlWebpackPlugin.options.title %></title>
-   </head>
+      <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+   rel="stylesheet"
+   href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+   integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+   crossorigin="anonymous"
+/>
+
+      <title>ホーム | portfolio</title>
+   <link href="./detail/css/app.css" rel="stylesheet"></head>
 
    <body class="bg-secondary">
       <div id="app">
@@ -13,7 +21,7 @@
          <main class="main home">
             <!-- トップ画像 -->
             <section class="home__topImageSec">
-               <img class="home__topImage" src="<%= require('../images/top-image.jpg').default %>" alt="トップ画像" />
+               <img class="home__topImage" src="/detail/images/top-image.6bf4b103957ca87563072bfe9083de29.jpg" alt="トップ画像" />
                <div class="home__snsWrap">
                   <div class="container">
                      <div class="home__snsLogoWrap">
@@ -30,14 +38,14 @@
                            target="_blank"
                            rel="noopener noreferrer"
                            ><img
-                              src="<%= require('../images/sns/logo-background-color.png').default %>"
+                              src="/detail/images/logo-background-color.bf93fd41c27f2839c5e2699166d2236e.png"
                               alt="Qiitaロゴ"
                         /></a>
                      </div>
                   </div>
                </div>
                <div class="home__titleSec">
-                  <img class="home__title" src="<%= require('../images/home-image.svg').default %>" alt="" />
+                  <img class="home__title" src="/detail/images/home-image.53242e444c3b218bbca993ac5963f2a7.svg" alt="" />
                </div>
                <div class="home__wave">
                   <svg
@@ -70,5 +78,5 @@
          <!-- header -->
          <footer-component></footer-component>
       </div>
-   </body>
+   <script src="./detail/js/vendor.js"></script><script src="./detail/js/app.js"></script></body>
 </html>
